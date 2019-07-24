@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px"
+    y="0px" viewBox="0 0 100 97" style="enable-background:new 0 0 100 97;" xml:space="preserve">
+    <path style="fill:#fcbc06;"
+        d="M99.5,48.5C99.5,75.3,77.4,97,50,97C22.6,97,0.5,75.3,0.5,48.5C0.5,21.7,22.6,0,50,0  C77.4,0,99.5,21.7,99.5,48.5z" />
+    <path style="fill-rule:evenodd;clip-rule:evenodd;fill:none;"
+        d="M50,0C22.6,0,0.5,21.7,0.5,48.5C0.5,75.3,22.6,97,50,97  c27.3,0,49.5-21.7,49.5-48.5C99.5,21.7,77.4,0,50,0z" />
+    <rect x="37.2" y="30.6" style="display:none;fill:#FFFFFF;" width="24.8" height="39" />
+    <path style="fill-rule:evenodd;clip-rule:evenodd;fill:#FFFFFF;"
+        d="M55.8,29.5h9.7V18h-9.7c-7.5,0-13.6,6-13.6,13.3v5.7h-7.8v11.4  h7.8V79h11.7V48.5h9.7l1.9-11.4H53.9v-5.7C53.9,30.3,54.8,29.5,55.8,29.5" />
+</svg>

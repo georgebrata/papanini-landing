@@ -1,0 +1,75 @@
+.all_wrapper, body, html, .header_wrap, #mobile_menu {
+    background: white;
+}
+/* HEADER */
+.header_wrap header .logo {
+    height: 140px;
+}
+.header_wrap header .logo img {
+    object-fit: contain;
+}
+.page-template-menu .menu_sticky {
+    background: var(--white-color);
+}
+/* END OF HEADER */
+
+
+/* MOBILE */
+.header_wrap header .mobile_close {
+    color: var(--primary-color);
+}
+.footer-location-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+@media only screen and (max-width: 850px) {
+    .primary-cta {
+        width: 100%;
+    }   
+    .primary-cta a.fm_btn {
+        height: 60px;
+        line-height: 50px;
+    } 
+}
+/* END OF MOBILE */
+
+.fm_btn:hover {
+    filter: brightness(95%);
+    color: white;
+    text-decoration: none;
+}
+
+
+h1, h2 {
+    color: var(--primary-color);
+}
+.fm_btn {
+    background: var(--primary-color);
+}
+.divider {
+    width: 100%;
+    height: 10px;
+    background: url(https://www.francomanca.co.uk/wp-content/themes/franco_manca-2018-theme/img/border-black.svg) center center/auto 100% repeat;
+}
+.social_links {
+    justify-content: space-evenly;
+}
+a, .cookie_notification p a {
+    color: var(--primary-color);
+}
+.footer-wrapper footer .list-wrap:last-child ul li a {
+    color: var(--primary-color);
+}
+.footer-wrapper footer {
+    display: flex;
+    justify-content: space-between;
+}
+.checkbox-wrap input[type="checkbox"]:checked:after {
+    background: var(--primary-color);
+}
+.newsletter form .input-wrap input[type="email"], .newsletter form .input-wrap input[type="text"], .newsletter form .input-wrap input[type="date"] {
+    color: var(--black-color)
+}
+.social_links a span {
+    display: block;
+}

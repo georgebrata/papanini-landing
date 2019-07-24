@@ -1,0 +1,4 @@
+/* UTILITIES */
+.primary-color {
+    color: var(--primary-color) !important;
+}
