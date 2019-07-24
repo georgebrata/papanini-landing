@@ -49,7 +49,7 @@ h1, h2 {
 .divider {
     width: 100%;
     height: 10px;
-    background: url(https://www.francomanca.co.uk/wp-content/themes/franco_manca-2018-theme/img/border-black.svg) center center/auto 100% repeat;
+    background: url(../styles/img/border-black.svg) center center/auto 100% repeat;
 }
 .social_links {
     justify-content: space-evenly;

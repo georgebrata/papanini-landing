@@ -6,6 +6,7 @@
 	appearance: none;
 	outline: none
 }
+.attachment img[src$=".svg"],.widget_media_image img[src$=".svg"]{width:100%}.attachment img[src$=".svg"],.widget_media_image img[src$=".svg"]{width:100%}.attachment svg,.widget_media_image svg{max-width:100%;height:auto}
 *:before,
 *:after {
 	-webkit-box-sizing: border-box;
@@ -105,7 +106,6 @@ video {
 	padding: 0;
 	border: 0;
 	font-size: 100%;
-	font: inherit;
 	vertical-align: baseline
 }
 img {
@@ -164,28 +164,6 @@ table {
 .acf-map img {
 	max-width: inherit !important
 }
-@font-face{font-family:'ahamono-regular';src:url("../fonts/AHAMONO-Regular.eot");src:url("../fonts/AHAMONO-Regular.woff2") format("woff2"),
-url("../fonts/AHAMONO-Regular.woff") format("woff"),
-url("../fonts/AHAMONO-Regular.ttf") format("truetype"),
-url("../fonts/AHAMONO-Regular.svg#AHAMONO-Regular") format("svg"),
-url("../fonts/AHAMONO-Regular.eot?#iefix") format("embedded-opentype");
-font-weight:normal;
-font-style:normal
-}
-@font-face{font-family:'franco-manca-regular';src:url("../fonts/franco_manca_roman-webfont.eot");src:url("../fonts/franco_manca_roman-webfont.eot?#iefix") format("embedded-opentype"),
-url("../fonts/franco_manca_roman-webfont.woff") format("woff"),
-url("../fonts/franco_manca_roman-webfont.ttf") format("truetype"),
-url("../fonts/franco_manca_roman-webfont.svg#franco_manca_romanregular") format("svg");
-font-weight:normal;
-font-style:normal
-}
-@font-face{font-family:'franco-manca-bold';src:url("../fonts/franco_manca_bold-webfont.eot");src:url("../fonts/franco_manca_bold-webfont.eot?#iefix") format("embedded-opentype"),
-url("../fonts/franco_manca_bold-webfont.woff") format("woff"),
-url("../fonts/franco_manca_bold-webfont.ttf") format("truetype"),
-url("../fonts/franco_manca_bold-webfont.svg#franco_manca_boldregular") format("svg");
-font-weight:normal;
-font-style:normal
-}
 .section-form {
 	margin-top:50px;
 	margin-bottom:50px
@@ -200,10 +178,6 @@ input[type="email"],
 textarea {
 	width:100%;
 	color:#666;
-	font-family:"ahamono-regular",
-	"Helvetica Neue",
-	Helvetica,
-	sans-serif;
 	padding:20px;
 	border:none;
 	font-size:20px;
@@ -218,9 +192,6 @@ select {
 input:-webkit-autofill {
 	-webkit-box-shadow:0 0 0 1000px #fff inset !important;
 	-webkit-text-fill-color:#cccccc !important
-}
-label a {
-	color:#ed3d3e
 }
 .input-wrap {
 	margin-bottom:2rem
@@ -353,43 +324,30 @@ h3,
 h4 {
 	margin:0 0 20px 0;
 	padding:0;
-	font-family:"franco-manca-bold",
-	Verdana,
-	Geneva,
-	sans-serif;
 	text-transform:uppercase
 }
 h5,
 h6 {
-	color:#ed3d3e;
-	font-family:"ahamono-regular",
-	"Helvetica Neue",
-	Helvetica,
-	sans-serif;
 	color:#000;
 	margin:0 0 15px 0
 }
 h1 {
-	font-size:20px;
-	color:#ed3d3e
+	font-size:30px;
 }
 h2 {
-	font-size:19px;
-	color:#ed3d3e
+	font-size:29px;
 }
 h3 {
-	font-size:18px;
-	color:#ed3d3e
+	font-size:28px;
 }
 h4 {
-	font-size:17px;
-	color:#ed3d3e
+	font-size:27px;
 }
 h5 {
-	font-size:20px
+	font-size:25px
 }
 h6 {
-	font-size:18px
+	font-size:20px
 }
 .subhead {
 	text-transform:uppercase;
@@ -401,12 +359,6 @@ p {
 	font-size:16px;
 	padding:0;
 	line-height:23px
-}
-p a {
-	color:#ed3d3e
-}
-a {
-	color:#ed3d3e
 }
 a[href^=tel] {
 	display:block;
@@ -431,11 +383,6 @@ ul li,
 ol li {
 	list-style:disc;
 	margin-bottom:15px;
-	color:#ed3d3e
-}
-ul li a,
-ol li a {
-	color:#ed3d3e
 }
 em {
 	font-weight:600
@@ -510,7 +457,6 @@ img.alignnone {
 }
 .wpcf7 form p input[type='submit'] {
 	padding:10px 15px;
-	background:#ed3d3e;
 	color:#fff;
 	border:none;
 	width:100%;
@@ -546,9 +492,7 @@ img.alignnone {
 	text-transform:uppercase;
 	text-align:center
 }
-.primary_menu ul li.red a {
-	color:#ed3d3e
-}
+
 .primary_menu ul li a {
 	padding:10px;
 	color:#000;
@@ -556,14 +500,8 @@ img.alignnone {
 	-webkit-flex-grow:1;
 	-ms-flex-positive:1;
 	flex-grow:1;
-	font-family:"ahamono-regular",
-	"Helvetica Neue",
-	Helvetica,
-	sans-serif
 }
-.primary_menu ul li.current-menu-item a {
-	color:#ed3d3e
-}
+
 .primary_menu ul li:hover>ul {
 	display:-webkit-box;
 	display:-webkit-flex;
@@ -632,7 +570,6 @@ html .login #login_error {
 	-webkit-box-shadow:none !important;
 	box-shadow:none !important;
 	border:none;
-	background:#ed3d3e
 }
 html .login #login_error a {
 	color:#fff
@@ -641,7 +578,6 @@ html .login p.message {
 	text-align:center;
 	font-size:14px;
 	margin:0 20px 20px;
-	background:#ed3d3e;
 	color:#fff;
 	-webkit-box-shadow:none !important;
 	box-shadow:none !important;
@@ -700,13 +636,11 @@ html .login form label {
 }
 html .login form input[type="text"],
 html .login form input[type="password"] {
-	font-family:'franco-manca-bold';
 	background:none;
 	border:none;
 	border-bottom:1px solid #fff;
 	-webkit-box-shadow:none;
 	box-shadow:none;
-	color:#ed3d3e
 }
 html .login form label[for="user_login"]:before {
 	content:"\f110";
@@ -731,7 +665,6 @@ html .login form #wp-submit {
 	color:#fff;
 	text-decoration:none;
 	border-radius:0;
-	background:#ed3d3e;
 	border:none;
 	cursor:pointer;
 	text-shadow:none;
@@ -803,9 +736,6 @@ html .forgetmenot {
 	width:100%;
 	text-align:center;
 	font-size:14px;
-	font-family:Arial,
-	Helvetica,
-	sans-serif;
 	opacity:0;
 	-webkit-transition:opacity 0.3s ease;
 	transition:opacity 0.3s ease
@@ -875,9 +805,6 @@ html .forgetmenot {
 	color:#fff;
 	font-style:normal;
 	font-size:35px;
-	font-family:Arial,
-	Baskerville,
-	monospace;
 	line-height:35px;
 	text-shadow:0 1px 2px rgba(0,
 	0,
@@ -903,9 +830,6 @@ html .forgetmenot {
 	color:#fff;
 	font-style:normal;
 	font-size:35px;
-	font-family:Arial,
-	Baskerville,
-	monospace;
 	line-height:35px;
 	text-shadow:0 1px 2px rgba(0,
 	0,
@@ -1188,13 +1112,11 @@ font-style:normal
 	font-size:6px;
 	line-height:20px;
 	text-align:center;
-	color:#ed3d3e;
 	opacity:.25;
 	-webkit-font-smoothing:antialiased;
 	-moz-osx-font-smoothing:grayscale
 }
 .slick-dots li.slick-active button:before {
-	color:#ed3d3e;
 	opacity:1
 }
 .slick-slide img {
@@ -1428,9 +1350,6 @@ font-style:normal
 	padding:20px 0;
 	color:#000
 }
-.geo_footer .header .inner a.red {
-	color:#ed3d3e
-}
 .geo_footer .locations {
 	padding:20px;
 	height:400px;
@@ -1455,12 +1374,7 @@ font-style:normal
 	background:transparent;
 	border:none;
 	font-size:22px;
-	font-family:"ahamono-regular",
-	"Helvetica Neue",
-	Helvetica,
-	sans-serif;
 	margin:0;
-	color:#ed3d3e
 }
 .geo_footer .locations form.search_locations .input-wrap input[type="text"]::-webkit-input-placeholder {
 	color:#ccc
@@ -1531,7 +1445,6 @@ font-style:normal
 	align-items:flex-start
 }
 .newsletter h2 {
-	font-size:19px;
 	margin:0 0 20px 0
 }
 .newsletter .subhead {
@@ -1542,7 +1455,6 @@ font-style:normal
 .newsletter .error {
 	display:none;
 	margin:20px 0 0 0;
-	color:#ed3d3e
 }
 .newsletter .error p {
 	margin:0
@@ -1589,10 +1501,6 @@ font-style:normal
 	background:transparent;
 	border:none;
 	font-size:20px;
-	font-family:"ahamono-regular",
-	"Helvetica Neue",
-	Helvetica,
-	sans-serif;
 	margin:0;
 	color:#cccccc
 }
@@ -1634,10 +1542,6 @@ font-style:normal
 	background-size:15px;
 	font-size:15px;
 	color:#666;
-	font-family:"ahamono-regular",
-	"Helvetica Neue",
-	Helvetica,
-	sans-serif;
 	padding:10px 5px;
 	margin:0;
 	border:none;
@@ -1711,7 +1615,6 @@ font-style:normal
 	display:none
 }
 .section-form form.contact-form .error {
-	color:#ed3d3e;
 	margin:0 0 20px 0
 }
 @media only screen and (max-width: 850px) {
@@ -1749,9 +1652,7 @@ font-style:normal
 	margin:2rem auto;
 	text-align:center
 }
-.enquire_form form label a {
-	color:#ed3d3e
-}
+
 .enquire_form form .radio-wrap {
 	margin:30px 0;
 	display:-webkit-box;
@@ -1851,7 +1752,6 @@ font-style:normal
 	}
 }
 .enquire_form form .error {
-	color:#ed3d3e;
 	margin:0 0 20px 0
 }
 .enquire_form form .input_grid {
@@ -1883,10 +1783,6 @@ font-style:normal
 .enquire_form form input[type="time"],
 .enquire_form form input[type="number"] {
 	color:#666;
-	font-family:"ahamono-regular",
-	"Helvetica Neue",
-	Helvetica,
-	sans-serif;
 	padding:20px;
 	border:none;
 	font-size:20px;
@@ -1958,9 +1854,6 @@ font-style:normal
 .feedback .success {
 	text-align:center
 }
-.feedback form label a {
-	color:#ed3d3e
-}
 .feedback form .radio-wrap {
 	margin:30px 0;
 	display:-webkit-box;
@@ -2016,7 +1909,6 @@ font-style:normal
 	margin:30px 0
 }
 .feedback form .error {
-	color:#ed3d3e;
 	margin:0 0 20px 0
 }
 .feedback form .input_grid {
@@ -2051,10 +1943,6 @@ font-style:normal
 .feedback form textarea {
 	color:#666;
 	background-color:#fff;
-	font-family:"ahamono-regular",
-	"Helvetica Neue",
-	Helvetica,
-	sans-serif;
 	padding:20px;
 	border:none;
 	font-size:20px;
@@ -2187,10 +2075,6 @@ font-style:normal
 .loyalty .success {
 	text-align:center
 }
-.loyalty h2 {
-	font-size:19px;
-	margin:0 0 20px 0
-}
 .loyalty .subhead {
 	text-transform:uppercase;
 	font-size:30px;
@@ -2201,7 +2085,6 @@ font-style:normal
 .loyalty .error {
 	display:none;
 	margin:20px 0 0 0;
-	color:#ed3d3e
 }
 .loyalty .error p {
 	margin:0
@@ -2241,10 +2124,6 @@ font-style:normal
 	background:url(../img/chevron-down.svg) right 10px center/20px auto no-repeat #fff;
 	background-size:15px;
 	color:#666;
-	font-family:"ahamono-regular",
-	"Helvetica Neue",
-	Helvetica,
-	sans-serif;
 	font-size:18px;
 	padding:12px;
 	border:none;
@@ -2308,10 +2187,6 @@ font-style:normal
 	background:transparent;
 	border:none;
 	font-size:18px;
-	font-family:"ahamono-regular",
-	"Helvetica Neue",
-	Helvetica,
-	sans-serif;
 	margin:0;
 	color:#cccccc
 }
@@ -2397,10 +2272,6 @@ font-style:normal
 .competition .success {
 	text-align:center
 }
-.competition h2 {
-	font-size:19px;
-	margin:0 0 20px 0
-}
 .competition .subhead {
 	text-transform:uppercase;
 	font-size:30px;
@@ -2411,7 +2282,6 @@ font-style:normal
 .competition .error {
 	display:none;
 	margin:20px 0 0 0;
-	color:#ed3d3e
 }
 .competition .error p {
 	margin:0
@@ -2451,10 +2321,6 @@ font-style:normal
 	background:url(../img/chevron-down.svg) right 10px center/20px auto no-repeat #fff;
 	background-size:15px;
 	color:#666;
-	font-family:"ahamono-regular",
-	"Helvetica Neue",
-	Helvetica,
-	sans-serif;
 	font-size:18px;
 	padding:12px;
 	border:none;
@@ -2518,10 +2384,6 @@ font-style:normal
 	background:transparent;
 	border:none;
 	font-size:18px;
-	font-family:"ahamono-regular",
-	"Helvetica Neue",
-	Helvetica,
-	sans-serif;
 	margin:0;
 	color:#cccccc
 }
@@ -2616,9 +2478,6 @@ font-style:normal
 .masterclass .heading p {
 	margin:2rem auto;
 	text-align:center
-}
-.masterclass form label a {
-	color:#ed3d3e
 }
 .masterclass form .radio-wrap {
 	margin:30px 0;
@@ -2719,7 +2578,6 @@ font-style:normal
 	}
 }
 .masterclass form .error {
-	color:#ed3d3e;
 	margin:0 0 20px 0
 }
 .masterclass form textarea {
@@ -2734,10 +2592,6 @@ font-style:normal
 .masterclass form input[type="time"],
 .masterclass form input[type="number"] {
 	color:#666;
-	font-family:"ahamono-regular",
-	"Helvetica Neue",
-	Helvetica,
-	sans-serif;
 	padding:20px;
 	border:none;
 	font-size:20px;
@@ -2808,7 +2662,6 @@ font-style:normal
 	text-align:center
 }
 .newvenue-form h2 {
-	font-size:19px;
 	margin:0 0 20px 0
 }
 .newvenue-form .subhead {
@@ -2821,7 +2674,6 @@ font-style:normal
 .newvenue-form .error {
 	display:none;
 	margin:20px 0 0 0;
-	color:#ed3d3e
 }
 .newvenue-form .error p {
 	margin:0
@@ -2861,10 +2713,6 @@ font-style:normal
 	background:url(../img/chevron-down.svg) right 10px center/20px auto no-repeat #fff;
 	background-size:15px;
 	color:#666;
-	font-family:"ahamono-regular",
-	"Helvetica Neue",
-	Helvetica,
-	sans-serif;
 	font-size:18px;
 	padding:12px;
 	border:none;
@@ -2928,10 +2776,6 @@ font-style:normal
 	background:transparent;
 	border:none;
 	font-size:18px;
-	font-family:"ahamono-regular",
-	"Helvetica Neue",
-	Helvetica,
-	sans-serif;
 	margin:0;
 	color:#cccccc
 }
@@ -2978,10 +2822,6 @@ font-style:normal
 	background-size:15px;
 	font-size:15px;
 	color:#666;
-	font-family:"ahamono-regular",
-	"Helvetica Neue",
-	Helvetica,
-	sans-serif;
 	padding:10px 5px;
 	margin:0;
 	border:none;
@@ -3049,7 +2889,6 @@ font-style:normal
 	}
 }
 .search_form form h2 {
-	font-size:19px;
 	margin:0 0 20px 0
 }
 .search_form form p {
@@ -3064,11 +2903,6 @@ font-style:normal
 	background:transparent;
 	border:none;
 	font-size:24px;
-	font-family:"ahamono-regular",
-	"Helvetica Neue",
-	Helvetica,
-	sans-serif;
-	color:#ed3d3e
 }
 .search_form form .input-wrap input[type="text"]::-webkit-input-placeholder {
 	color:#ccc
@@ -3104,10 +2938,6 @@ font-style:normal
 }
 .restaurant_listing.show {
 	display:block
-}
-.restaurant_listing .area p.area_name {
-	color:#ed3d3e;
-	font-size:19px
 }
 .restaurant_listing .area ul {
 	padding:0;
@@ -7403,11 +7233,6 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 	display:block;
 	white-space:pre;
 	padding:4px 12px;
-	font-family:"Open Sans",
-	"Helvetica Neue",
-	Helvetica,
-	Arial,
-	sans-serif;
 	font-size:12px
 }
 .lg-outer .lg-dropdown a:hover {
@@ -8000,10 +7825,6 @@ section.flexible-content.grid .inner article.one-fifth {
 }
 section.flexible-content.grid .inner article .icon-grid__icon span {
 	font-size:55px;
-	color:#ed3d3e
-}
-section.flexible-content.grid .inner article a {
-	color:#ed3d3e
 }
 section.flexible-content.accordion.grey .accordion__wrap h3 {
 	background:#e1dbdb
@@ -8027,7 +7848,6 @@ section.flexible-content.accordion .accordion__wrap h3 {
 	-webkit-justify-content:space-between;
 	-ms-flex-pack:justify;
 	justify-content:space-between;
-	color:#ed3d3e;
 	font-size:20px;
 	background:#eae6e6;
 	margin:0;
@@ -8037,12 +7857,10 @@ section.flexible-content.accordion .accordion__wrap h3 {
 section.flexible-content.accordion .accordion__wrap h3 span {
 	display:block;
 	margin-top:7px;
-	color:#ed3d3e;
 	font-size:26px;
 	margin:0 0 0 20px
 }
 section.flexible-content.accordion .accordion__wrap h3.active {
-	background:#ed3d3e;
 	border-bottom:1px solid #d3caca;
 	color:#fff
 }
@@ -8083,17 +7901,14 @@ section.flexible-content.tabs ul.tabbed li a {
 	padding:10px 30px;
 	text-align:center;
 	font-size:18px;
-	color:#ed3d3e;
 	text-transform:uppercase
 }
 section.flexible-content.tabs ul.tabbed li a:hover {
 	background:#efecec
 }
 section.flexible-content.tabs ul.tabbed li.active a {
-	border-top:2px #ed3d3e solid;
 	background:#eae6e6;
 	font-weight:400;
-	color:#ed3d3e
 }
 section.flexible-content.tabs .tab__content {
 	padding:20px;
@@ -8256,7 +8071,6 @@ section.flexible-content.table table thead th {
 	padding:10px;
 	text-align:left;
 	font-size:18px;
-	background:#ed3d3e;
 	text-transform:uppercase
 }
 section.flexible-content.table table tbody tr:nth-child(odd) {
@@ -8281,7 +8095,6 @@ section.flexible-content.video .video-wrapper {
 }
 section.flexible-content.video .video-wrapper h4 {
 	font-size:28px;
-	color:#ed3d3e;
 	margin:0;
 	padding-bottom:5px;
 	text-transform:uppercase
@@ -8337,9 +8150,6 @@ section.flexible-content.carousel-images .owl-controls .owl-pagination .owl-page
 	width:15px;
 	height:15px
 }
-section.flexible-content.carousel-images .owl-controls .owl-pagination .owl-page.active {
-	background:#ed3d3e
-}
 section.flexible-content.carousel-images .owl-controls {
 	margin:10px 0 0
 }
@@ -8359,9 +8169,6 @@ section.flexible-content.carousel-images .owl-controls .owl-dots .owl-dot {
 	margin:5px;
 	width:15px;
 	height:15px
-}
-section.flexible-content.carousel-images .owl-controls .owl-dots .owl-dot.active {
-	background:#ed3d3e
 }
 section.flexible-content.carousel-images ul.lSPager {
 	display:-webkit-box;
@@ -8384,9 +8191,6 @@ section.flexible-content.carousel-images ul.lSPager li {
 }
 section.flexible-content.carousel-images ul.lSPager li a {
 	display:none
-}
-section.flexible-content.carousel-images ul.lSPager li.active {
-	background:#ed3d3e
 }
 section.flexible-content.post-feed {
 	padding:45px 0
@@ -8442,9 +8246,6 @@ section.flexible-content.post-feed .inner.slider .owl-controls .owl-pagination .
 	width:15px;
 	height:15px
 }
-section.flexible-content.post-feed .inner.slider .owl-controls .owl-pagination .owl-page.active {
-	background:#ed3d3e
-}
 section.flexible-content.post-feed .inner.slider .owl-controls {
 	margin:10px 0 0
 }
@@ -8464,9 +8265,6 @@ section.flexible-content.post-feed .inner.slider .owl-controls .owl-dots .owl-do
 	margin:5px;
 	width:15px;
 	height:15px
-}
-section.flexible-content.post-feed .inner.slider .owl-controls .owl-dots .owl-dot.active {
-	background:#ed3d3e
 }
 section.flexible-content.post-feed .inner.slider ul.lSPager {
 	display:-webkit-box;
@@ -8489,9 +8287,6 @@ section.flexible-content.post-feed .inner.slider ul.lSPager li {
 }
 section.flexible-content.post-feed .inner.slider ul.lSPager li a {
 	display:none
-}
-section.flexible-content.post-feed .inner.slider ul.lSPager li.active {
-	background:#ed3d3e
 }
 section.flexible-content.post-feed .inner article {
 	padding:5px;
@@ -8656,9 +8451,6 @@ section.flexible-content.post-feed .inner article.one-fourth {
 }
 .footer-wrapper footer .list-wrap {
 	padding:10px
-}
-.footer-wrapper footer .list-wrap:nth-child(4) ul li a {
-	color:#ed3d3e
 }
 .footer-wrapper footer .list-wrap ul {
 	line-height:normal;
@@ -8850,13 +8642,11 @@ section.flexible-content.post-feed .inner article.one-fourth {
 	-ms-flex-wrap:wrap;
 	flex-wrap:wrap;
 	border-style:solid;
-	border-color:#ed3d3e;
 	border-width:1px 0 0 1px;
 	margin:20px 0 10px
 }
 .sidebar .block ul.cloud li {
 	border-style:solid;
-	border-color:#ed3d3e;
 	border-width:0 1px 1px 0;
 	-webkit-box-flex:1;
 	-webkit-flex:1 0 auto;
@@ -8865,7 +8655,6 @@ section.flexible-content.post-feed .inner article.one-fourth {
 }
 .sidebar .block ul.cloud li:last-child {
 	border-style:solid;
-	border-color:#ed3d3e;
 	border-width:0 1px 1px 0
 }
 .sidebar .block ul.cloud li a {
@@ -8880,7 +8669,6 @@ section.flexible-content.post-feed .inner article.one-fourth {
 	line-height:normal
 }
 .sidebar .block ul.cloud li a:hover {
-	background:#ed3d3e;
 	color:#fff
 }
 .sidebar .block ul li {
@@ -8921,18 +8709,9 @@ section.flexible-content.post-feed .inner article.one-fourth {
 .sidebar .block ul li a time {
 	font-size:12px;
 	margin:0 0 0 auto;
-	border:1px solid #ed3d3e;
 	border-radius:5px;
 	padding:4px;
 	line-height:normal
-}
-.flatpickr-day.selected {
-	background:#ed3d3e;
-	border-color:#ed3d3e
-}
-.flatpickr-day.selected:hover {
-	background:#ed3d3e;
-	border-color:#ed3d3e
 }
 .all_wrapper,
 body,
@@ -8940,10 +8719,6 @@ html {
 	background:#f9f6f6
 }
 body {
-	font-family:"ahamono-regular",
-	"Helvetica Neue",
-	Helvetica,
-	sans-serif;
 	font-size:16px;
 	color:#000;
 	background:#f9f6f6
@@ -8962,7 +8737,6 @@ body {
 }
 .marker_text {
 	font-size:16px;
-	color:#ed3d3e
 }
 .max_width,
 .content_width {
@@ -9167,7 +8941,6 @@ body {
 }
 .fm_btn {
 	cursor:pointer;
-	background:#ed3d3e;
 	-webkit-clip-path:polygon(0 93%,
 	0 1%,
 	19% 1%,
@@ -9190,14 +8963,10 @@ body {
 	100% 85%,
 	100% 100%,
 	29% 100%);
-	font-family:"franco-manca-bold",
-	Verdana,
-	Geneva,
-	sans-serif;
 	padding:5px 20px;
 	text-transform:uppercase;
 	color:#fff;
-	font-size:12px;
+	font-size:20px;
 	border:none;
 	border-radius:0 8px 0 0;
 	display:inline-block
@@ -9231,9 +9000,7 @@ input {
 	color:#ccc;
 	padding:20px 0
 }
-.credit a {
-	color:#ed3d3e
-}
+
 .ie-edge input[type="submit"] {
 	max-height:50px
 }
@@ -9764,11 +9531,6 @@ input {
 #mobile_menu header .close {
 	cursor:pointer;
 	font-size:35px;
-	color:#ed3d3e;
-	font-family:"franco-manca-bold",
-	Verdana,
-	Geneva,
-	sans-serif;
 	-webkit-transform:rotate(45deg);
 	transform:rotate(45deg);
 	padding:20px;
@@ -9826,9 +9588,7 @@ input {
 	margin:0;
 	list-style:none
 }
-#mobile_menu .menu-mobile-container ul li.current-menu-item a {
-	color:#ed3d3e
-}
+
 #mobile_menu .menu-mobile-container ul li a {
 	display:block;
 	text-transform:uppercase;
@@ -9859,10 +9619,6 @@ input {
 .cookie_notification a.close {
 	cursor:pointer;
 	font-size:20px;
-	font-family:"franco-manca-bold",
-	Verdana,
-	Geneva,
-	sans-serif;
 	-webkit-transform:rotate(45deg);
 	transform:rotate(45deg)
 }
@@ -9871,12 +9627,7 @@ input {
 }
 .cookie_notification p a {
 	text-decoration:underline;
-	font-family:"ahamono-regular",
-	"Helvetica Neue",
-	Helvetica,
-	sans-serif;
 	font-size:16px;
-	color:#ed3d3e
 }
 .header_wrap {
 	position:fixed;
@@ -10016,7 +9767,6 @@ input {
 	-webkit-align-items:center;
 	-ms-flex-align:center;
 	align-items:center;
-	color:#ed3d3e;
 	font-size:60px;
 	-webkit-transform:rotate(45deg);
 	transform:rotate(45deg)
@@ -10039,7 +9789,6 @@ input {
 	padding:10px;
 	width:60px;
 	height:60px;
-	color:#ed3d3e
 }
 .header_wrap header .burger.hide {
 	display:none
@@ -10457,10 +10206,6 @@ input {
 	font-size:28px;
 	line-height:normal;
 	color:#000;
-	font-family:"ahamono-regular",
-	"Helvetica Neue",
-	Helvetica,
-	sans-serif;
 	margin-bottom:20px
 }
 .promo .teaser_text .excerpt,
@@ -10511,7 +10256,6 @@ input {
 }
 .page-template-my-local .local .my_local h1,
 .restaurants-template-default .local .my_local h1 {
-	font-size:19px;
 	margin:0 0 10px 0
 }
 .page-template-my-local .local .my_local .restaurant_name,
@@ -10598,7 +10342,6 @@ input {
 }
 .page-template-my-local .specials .specials_wrap h2,
 .restaurants-template-default .specials .specials_wrap h2 {
-	font-size:19px;
 	margin:0 0 40px 0
 }
 .page-template-my-local .specials .specials_wrap .specials-inner,
@@ -10710,7 +10453,6 @@ input {
 	-webkit-justify-content:center;
 	-ms-flex-pack:center;
 	justify-content:center;
-	color:#ed3d3e;
 	margin:5px 0 0 0
 }
 .page-template-my-local .specials .info p.manager span img,
@@ -10748,7 +10490,6 @@ input {
 .page-template-my-local .specials .info ul li::before,
 .restaurants-template-default .specials .info ul li::before {
 	content:'â€¢ ';
-	color:#ed3d3e;
 	position:absolute;
 	top:0;
 	left:11px
@@ -10777,7 +10518,6 @@ input {
 .page-template-my-local .christmas .item span,
 .restaurants-template-default .christmas .item span {
 	font-size:20px;
-	color:#ed3d3e
 }
 .single-post .intro {
 	text-align:center;
@@ -10984,9 +10724,6 @@ input {
 	cursor:pointer;
 	text-transform:uppercase
 }
-.page-template-tabs .tabs_wrapper .tabs_container li .tab.active {
-	color:#ed3d3e
-}
 .page-template-tabs .tabs_wrapper .tab_content_container .tab_content {
 	display:none
 }
@@ -10997,9 +10734,7 @@ input {
 	color:#7b7b7b;
 	margin:0 0 50px 0
 }
-.page-template-tabs .tabs_wrapper .tab_content_container .tab_content strong {
-	color:#ed3d3e
-}
+
 .page-template-two-col .btn_wrap {
 	display:-webkit-box;
 	display:-webkit-flex;
@@ -11057,9 +10792,6 @@ input {
 		grid-gap:40px
 	}
 }
-.page-template-two-col .anchors_content_container .anchor_content strong {
-	color:#ed3d3e
-}
 .page-template-menu .menu_sticky {
 	position:-webkit-sticky;
 	position:sticky;
@@ -11114,16 +10846,6 @@ input {
 	width:34px;
 	height:34px
 }
-.page-template-menu .allergens_panel .inner .cols .filter.active {
-	color:#ed3d3e
-}
-.page-template-menu .allergens_panel .inner .cols .filter.active svg {
-	fill:#ed3d3e
-}
-.page-template-menu .allergens_panel .inner .clear_filters {
-	color:#ed3d3e;
-	cursor:pointer
-}
 .page-template-menu .anchor_nav {
 	display:-webkit-box;
 	display:-webkit-flex;
@@ -11160,12 +10882,6 @@ input {
 	display:block;
 	padding:25px 20px 20px 20px
 }
-.page-template-menu .anchor_nav a.active {
-	color:#ed3d3e
-}
-.page-template-menu .anchor_nav a.allergens_toggle {
-	color:#ed3d3e
-}
 .page-template-menu .menu_block {
 	text-align:center
 }
@@ -11178,15 +10894,9 @@ input {
 	display:-ms-flexbox;
 	display:flex
 }
-.page-template-menu .menu_block .item strong {
-	color:#ed3d3e
-}
 .page-template-menu .menu_block .intro {
 	max-width:300px;
 	margin:0 auto 70px
-}
-.page-template-menu .menu_block .intro h2 {
-	color:#ed3d3e
 }
 .page-template-menu .menu_block .intro>*:nth-child(1) {
 	margin:0
@@ -11285,9 +10995,6 @@ input {
 }
 .page-template-menu .menu_block .columns .block:last-child {
 	margin:0
-}
-.page-template-menu .menu_block .columns .block h5 {
-	color:#ed3d3e
 }
 .page-template-menu .menu_block .columns .block img.illus {
 	width:100%;
@@ -11451,13 +11158,6 @@ input {
 	width:100%;
 	margin:70px 0
 }
-.red {
-	font-family:"franco-manca-bold",
-	Verdana,
-	Geneva,
-	sans-serif;
-	color:#ed3d3e
-}
 .page-template-event .venues {
 	margin:50px 0
 }
@@ -11497,10 +11197,6 @@ input {
 	flex-direction:column
 }
 .page-template-event .venue .inner h3 {
-	font-family:"ahamono-regular",
-	"Helvetica Neue",
-	Helvetica,
-	sans-serif;
 	color:#000;
 	font-size:35px
 }
@@ -11558,10 +11254,6 @@ input {
 	margin-bottom:0.5rem
 }
 .page-template-landing .intro .sub_head {
-	font-family:"ahamono-regular",
-	"Helvetica Neue",
-	Helvetica,
-	sans-serif;
 	color:#000
 }
 .page-template-landing .single-image img,
@@ -11601,7 +11293,6 @@ input {
 	display:block;
 	text-align:center;
 	margin:0 0 70px 0;
-	color:#ed3d3e
 }
 @media print {
 	.header_wrap,
