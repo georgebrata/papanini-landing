@@ -49,6 +49,27 @@
 
 <body data-rsssl=1 class="home page-template-menu page lock geo_disabled">
 
+	<!--EXIT-INTENT MODAL-->
+	<div class="geo_error modal1"> 
+		<div class="notification mask2 pt-1 background-img">
+			<button type="button" class="close-btn">X</button>
+			<h2>Pleci atat de repede?</h2>
+			<p class="sub_head">Da-ne un like rapid pe facebook si primesti o supriza de la noi</p>
+			<div class="fb-like" data-href="https://www.facebook.com/papanini.ro/" data-width="300" data-layout="button" data-action="like" data-size="large" data-show-faces="true" data-share="false"></div>
+			<div style="position: absolute; width: 60%; height: 35px; top: 450px; right: 20%;z-index: 9999;" class="like-overlay"></div>
+			<br>
+			<button type="button" id="surpriza-btn" class="fm_btn btn-disabled mt-4 ml-4">Vezi surpriza</button>
+			<br>
+			<div id="cod-reducere" class="hidden mt-4">
+				<h2 class="mb-2">Cod reducere 10% pentru orice comanda</h2>
+				<p class="sub_head">PAPANINI10</p>
+			</div>
+		</div>
+	</div>
+	<div id="fb-root"></div>
+	<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v4.0&appId=530456467699824&autoLogAppEvents=1"></script>
+	<script type='text/javascript' src='../assets/scripts/exit-intent.js'></script>
+	
 	<div class="preloader">
 		<img src="../assets/media/papanini-loader.gif" alt="Papanini Loader GIF">
 	</div>
@@ -140,7 +161,7 @@
 					<a target="_blank" href="https://www.instagram.com/" class="link">
 						<img src="../assets/media/instagram-icon.svg"
 							alt="instagram">
-						<span class="mr-1">@papanini</span>
+						<span class="mr-1">papanini</span>
 					</a>
 				</div>
 				<div class="divider grey"></div>

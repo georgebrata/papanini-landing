@@ -2,3 +2,33 @@
 .primary-color {
     color: var(--primary-color) !important;
 }
+
+
+/* Exit-intent popup */
+#surpriza-btn.btn-disabled:hover {
+    background: gray;
+}
+#surpriza-btn.btn-disabled {
+    cursor: pointer;
+    background: gray;
+    pointer-events: none;
+}
+#cod-reducere.hidden {
+    display: none;
+}
+.notification .close-btn {
+    position: relative;
+    top: 0;
+    right: 0;
+    font-size: 30px;
+    text-align: right;
+    border: 0;
+    width: 100%;
+    background: transparent;
+    outline: none;
+}
+.notification.background-img {
+    background-image: url(../media/modal-background.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}

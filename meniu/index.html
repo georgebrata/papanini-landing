@@ -49,6 +49,26 @@
 </head>
 
 <body data-rsssl=1 class="home page-template-menu page lock geo_disabled">
+<!--EXIT-INTENT MODAL-->
+	<div class="geo_error modal1"> 
+		<div class="notification mask2 pt-1 background-img">
+			<button type="button" class="close-btn">X</button>
+			<h2>Pleci atat de repede?</h2>
+			<p class="sub_head">Da-ne un like rapid pe facebook si primesti o supriza de la noi</p>
+			<div class="fb-like" data-href="https://www.facebook.com/papanini.ro/" data-width="300" data-layout="button" data-action="like" data-size="large" data-show-faces="true" data-share="false"></div>
+			<div style="position: absolute; width: 60%; height: 35px; top: 450px; right: 20%;z-index: 9999;" class="like-overlay"></div>
+			<br>
+			<button type="button" id="surpriza-btn" class="fm_btn btn-disabled mt-4 ml-4">Vezi surpriza</button>
+			<br>
+			<div id="cod-reducere" class="hidden mt-4">
+				<h2 class="mb-2">Cod reducere 10% pentru orice comanda</h2>
+				<p class="sub_head">PAPANINI10</p>
+			</div>
+		</div>
+	</div>
+	<div id="fb-root"></div>
+	<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v4.0&appId=530456467699824&autoLogAppEvents=1"></script>
+	<script type='text/javascript' src='../assets/scripts/exit-intent.js'></script>
 
 	<div class="preloader">
 		<img src="../assets/media/papanini-loader.gif" alt="Papanini Loader GIF">
@@ -99,7 +119,7 @@
 					<ul id="menu-header-right" class="">
 						<li id="menu-item-554" class="red menu-item menu-item-type-custom menu-item-object-custom menu-item-554">
 							<a rel="noopener noreferrer" href="javascript:void(0);" class="primary-color">
-								<h1 style=" margin-bottom: 0px;">Meniu</h1>
+								<h1 style="margin-bottom: 0px;">Meniu</h1>
 							</a>
 						</li>
 					</ul>
@@ -137,159 +157,257 @@
 
                 <div class="menu_sticky">
                     <div class="anchor_nav">
-                        <a class="smoothscroll-menu" href="#menublock_1">Vegetarian</a>
-                        <a class="smoothscroll-menu" href="#menublock_2">Pui</a>
-                        <a class="smoothscroll-menu" href="#menublock_3">Porc</a>
-                        <a class="smoothscroll-menu" href="#menublock_4">Salate</a>
-                        <a class="smoothscroll-menu" href="#menublock_5">Sucuri</a>
-                        <a class="smoothscroll-menu" href="#menublock_6">Pentru copii</a>
-<!--                    <a class="allergens_toggle active" href="#">Hide allergens</a> -->
+                        <a class="smoothscroll-menu" href="#menublock_1">Panini</a>
+                        <a class="smoothscroll-menu" href="#menublock_2">Salate</a>
+                        <a class="smoothscroll-menu" href="#menublock_3">Cartofi</a>
+                        <a class="smoothscroll-menu" href="#menublock_4">Focaccia</a>
+                        <a class="smoothscroll-menu" href="#menublock_5">Deserturi</a>
+                        <a class="smoothscroll-menu" href="#menublock_6">Băuturi</a>
                     </div>
                     <div class="divider grey"></div>
                 </div>
 
                 <div class="section menu_block" id="menublock_1">
                     <div class="intro">
-                        <h2 class="primary-color">Vegetarian</h2>
+                        <h2 class="primary-color">Panini</h2>
                         <p>Stim ce iti place.</p>
                         <p>Stim ce este sanatos pentru tine.</p>
                     </div>
                     <div class="margin_gap col_three rows">
                         <div class="item">
-                            <img class="num_icon" src="../assets/styles/img/one-200x200.png">
-                            <p>Tomato, garlic<br>&amp; oregano</p>
-                            <p>5 RON</p>            
+							<h3 class="cursive-font primary-color">Panino Skinny Mini</h3>
+							<p>mozzarella, ardei roșu copt, sos pesto</p>
+                            <p>0 RON</p>            
 						</div>
 						
                         <div class="item">
-                            <img class="num_icon" src="../assets/styles/img/two-200x200.png">
-                            <p>Tomato, mozzarella<br>&amp; basil</p>
-                            <p>6.75 RON</p>
-                        </div>
+							<h3 class="cursive-font primary-color">Panino Avo Ceci</h3>
+							<p>năut tocat, pastă de măsline, ardei roșu copt, felii de avocado, rucola</p>
+                            <p>0 RON</p>            
+						</div>
 
-                        <div class="item">
-                            <img class="num_icon" src="../assets/styles/img/three-200x200.png">
-                            <p>Roasted courgettes, ricotta, mozzarella, yellow tomatoes from Vesuvio &amp; fresh mint leaves [no tomato base]</p>
-                            <p>7.95 RON</p>
-                        </div>
+						<div class="item">
+							<h3 class="cursive-font primary-color">Panino Funghi</h3>
+							<p><b>ciuperci marinate coapte</b>, sos de brânză, ceapă caramelizată</p>
+                            <p>0 RON</p>            
+						</div>
+						<div class="item">
+							<h3 class="cursive-font primary-color">Panino Gyros</h3>
+							<p><b>pui</b> sau <b>halloumi</b> la grill, cartofi prăjiți, rosie, salată verde, sos Tzatziki</p>
+							<p>0 RON</p>            
+						</div>
+						<div class="item">
+							<h3 class="cursive-font primary-color">Panino Pui & Avocado</h3>
+							<p>Pui copt, coleslaw, avocado, sos dulce-iute, brânză Mozzarella</p>
+							<p>0 RON</p>            
+						</div>
+						<div class="item">
+							<h3 class="cursive-font primary-color">Panino Godfadda</h3>
+							<p><b>Pui copt și prosciutto crudo</b>, rosie, rucola, brânză mozzarella, sos pesto</p>
+							<p>0 RON</p>            
+						</div>
+						<div class="item">
+							<h3 class="cursive-font primary-color">Panino Mortadella</h3>
+							<p>Mortadella, cartofi prajiti, mozzarella, sos Papanini</p>
+							<p>0 RON</p>            
+						</div>
+						<div class="item">
+							<h3 class="cursive-font primary-color">Panino Pulled Porkie</h3>
+							<p><b>carne porc condimentata</b>, gătită 12 ore la foc mic, si coleslaw </p>
+							<p>0 RON</p>            
+						</div>
+						<div class="item">
+							<h3 class="cursive-font primary-color">Panino Burger</h3>
+							<p>2 burgeri, branză cheddar, ceapă caramelizată, salată verde, roșie și sos Papanini</p>
+							<p>0 RON</p>            
+						</div>
+						<div class="item">
+							<h3 class="cursive-font primary-color">Niuu Panino - <i class="cursive-font primary-color">pentru copii</i></h3>
+							<p>pâine toast, bucăți de pui copt, mozzarella, cartofi prăjiți</p>
+							<p>EXTRA: Suc de mere</p>
+							<p>0 RON</p>            
+						</div>
 
-                        <div class="item">
-                            <img class="num_icon" src="../assets/styles/img/four-200x200.png">
-                            <p class="p3">Roasted cured ham<br> [home cured], mozzarella,<br> buffalo ricotta &amp; wild mushrooms<br> [little tomato]</p>
-                            <p class="p3">7.95 RON</p>
-                        </div>
-
-                        <div class="item">
-                            <img class="num_icon" src="../assets/styles/img/five-200x200.png">
-                            <p class="p2">Tomato, garlic, oregano,<br> capers, olives, Cantabrian<br> anchovies &amp; mozzarella</p>
-                            <p class="p2">8.00 RON</p>
-                        </div>
-
-                        <div class="item">
-                            <img class="num_icon" src="../assets/styles/img/six-200x200.png">
-                            <p class="p1">Tomato, cured chorizo<br> [Natural &amp; Iberico]<br> &amp; mozzarella</p>
-                            <p class="p1">8.25 RON</p>
-                        </div>
                     </div>
                 </div>
 
 				<div class="divider grey"></div>
 
-                <div class="section row" id="menublock_2">
-                    <div class="intro w-100 text-center mb-2">
-                        <h2 class="primary-color">Panini Pui</h2>
-                    </div>
-                    <div class="insta_geo col-xs-12 col-md-6 col-lg-4 mt-2 mb-2 margin_gap">
-                        <div class="geo_homepage_promo">
-                            <h2>Panini Veggie</h2>
-                            <img class="mask3"	src="../assets/media/panini-menu-1.jpg" />
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                            </p>
-                            <div class="btn_text_wrap pushdown">
-                                <a class="left">
-                                    Alergeni: nuci, alune si bacon
-                                </a>
-                                <a class="fm_btn" href="https://hipmenu.ro/">comanda</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="insta_geo col-xs-12 col-md-6 col-lg-4 mt-2 mb-2 margin_gap">
-                        <div class="geo_homepage_promo">
-                            <h2>Steak Panini</h2>
-                            <img class="mask3"	src="../assets/media/panini-menu-2.jpg" />
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                            </p>
-                            <div class="btn_text_wrap">
-                                <a class="left">
-                                    Nu contine alergeni
-                                </a>
-                                <a class="fm_btn" href=".">comanda</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="insta_geo col-xs-12 col-md-6 col-lg-4 mt-2 mb-2 margin_gap">
-                        <div class="geo_homepage_promo">
-                            <h2>Test Panini</h2>
-                            <img class="mask3"	src="../assets/media/panini-menu-3.jpg" />
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                            </p>
-                            <div class="btn_text_wrap">
-                                <a class="left">
-                                    
-                                </a>
-                                <a class="fm_btn" href=".">comanda</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="insta_geo col-xs-12 col-md-6 col-lg-4 mt-2 mb-2 margin_gap">
-                        <div class="geo_homepage_promo">
-                            <h2>Panini Veggie</h2>
-                            <img class="mask3"	src="../assets/media/panini-menu-1.jpg" />
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                            </p>
-                            <div class="btn_text_wrap pushdown">
-                                <a class="left">
-                                    Alergeni: nuci, alune si bacon
-                                </a>
-                                <a class="fm_btn" href="https://hipmenu.ro/">comanda</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="insta_geo col-xs-12 col-md-6 col-lg-4 mt-2 mb-2 margin_gap">
-                        <div class="geo_homepage_promo">
-                            <h2>Steak Panini</h2>
-                            <img class="mask3"	src="../assets/media/panini-menu-2.jpg" />
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                            </p>
-                            <div class="btn_text_wrap">
-                                <a class="left">
-                                    Nu contine alergeni
-                                </a>
-                                <a class="fm_btn" href="https://hipmenu.ro/">comanda</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="insta_geo col-xs-12 col-md-6 col-lg-4 mt-2 mb-2 margin_gap">
-                        <div class="geo_homepage_promo">
-                            <h2>Test Panini</h2>
-                            <img class="mask3"	src="../assets/media/panini-menu-3.jpg" />
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                            </p>
-                            <div class="btn_text_wrap">
-                                <a class="left">
-                                    
-                                </a>
-                                <a class="fm_btn" href="https://hipmenu.ro/">comanda</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                <div class="section menu_block" id="menublock_2">
+					<div class="intro">
+						<h2 class="primary-color">Salate</h2>
+					</div>
+					<div class="margin_gap col_three rows">
+						<div class="item">
+							<h3 class="cursive-font primary-color">Salata pui si avocado</h3>
+							<p>salată verde, bucati pui copt, avocado, roșie, castravete, porumb boabe, brânză feta, dressing-ul casei sau sos Tzatziki</p>
+							<p>0 RON</p>            
+						</div>
+
+						<div class="item">
+							<h3 class="cursive-font primary-color">Salata Panzanella cu naut</h3>
+							<p>salată verde, năut, roșie, castravete, mozzarella cilegine, crutoane, dressing-ul casei</p>
+							<p>0 RON</p>            
+						</div>
+
+						<div class="item">
+							<h3 class="cursive-font primary-color">Mini Salata</h3>
+							<p>salată verde, roșii, castraveți, porumb, ulei de măsline și oțet balsamic</p>
+							<p>0 RON</p>            
+						</div>
+		
+					</div>
+				</div>
+				
+				<div class="divider grey"></div>
+
+                <div class="section menu_block" id="menublock_3">
+					<div class="intro">
+						<h2 class="primary-color">Cartofi</h2>
+					</div>
+					<div class="margin_gap col_three rows">
+
+						<div class="item">
+							<h3 class="cursive-font primary-color">Cartofi prajiti</h3>
+							<p>0 RON</p>            
+						</div>
+
+						<div class="item">
+							<h3 class="cursive-font primary-color">Cartofi prajiti cu sos de branza</h3>
+							<p>0 RON</p>            
+						</div>
+		
+					</div>
+				</div>
+
+				<div class="divider grey"></div>
+				<div class="section menu_block" id="menublock_4">
+					<div class="intro">
+						<h2 class="primary-color">Focaccia</h2>
+					</div>
+					<div class="margin_gap col_three rows">
+
+						<div class="item">
+							<h3 class="cursive-font primary-color">Focaccia cu rosii uscate si oregano</h3>
+							<p>2 bucăți</p>
+							<p>0 RON</p>            
+						</div>
+
+						<div class="item">
+							<h3 class="cursive-font primary-color">Focaccia cu salam Napoli</h3>
+							<p>2 bucăți</p>							
+							<p>0 RON</p>            
+						</div>
+		
+					</div>
+				</div>
+
+				<div class="divider grey"></div>
+				<div class="section menu_block" id="menublock_5">
+					<div class="intro">
+						<h2 class="primary-color">Deserturi</h2>
+					</div>
+					<div class="margin_gap col_three rows">
+
+						<div class="item">
+							<h3 class="cursive-font primary-color">Cookie cu ciocolata</h3>
+							<p>0 RON</p>            
+						</div>
+
+						<div class="item">
+							<h3 class="cursive-font primary-color">Brownie</h3>
+							<p>0 RON</p>            
+						</div>
+
+						<div class="item">
+							<h3 class="cursive-font primary-color">Chec cu lămâie</h3>
+							<p>0 RON</p>            
+						</div>
+	
+					</div>
+				</div>
+
+				<div class="divider grey"></div>
+				<div class="section menu_block" id="menublock_6">
+					<div class="intro">
+						<h2 class="primary-color">Băuturi</h2>
+					</div>
+					<div class="margin_gap col_three rows">
+						<div class="item">
+							<h3 class="cursive-font primary-color">Limonada clasica</h3>
+							<p>Preparata proaspat</p>							
+							<p>0 RON</p>            
+						</div>
+						<div class="item">
+							<h3 class="cursive-font primary-color">Limonada de zmeura</h3>
+							<p>Preparata proaspat</p>							
+							<p>0 RON</p>            
+						</div>
+						<div class="item">
+							<h3 class="cursive-font primary-color">Limonada de menta</h3>
+							<p>Preparata proaspat</p>							
+							<p>0 RON</p>            
+						</div>
+					</div>
+					<div class="divider grey w-50 mx-auto"></div>
+					<div class="intro mt-4">
+						<h2 class="primary-color">Cafea</h2>
+					</div>
+					<div class="margin_gap col_three rows">
+						<div class="item">
+							<h3 class="cursive-font primary-color">Espresso</h3>
+							<p>0 RON</p>            
+						</div>
+						<div class="item">
+							<h3 class="cursive-font primary-color">Cappuccino</h3>
+							<p>0 RON</p>            
+						</div>
+						<div class="item">
+							<h3 class="cursive-font primary-color">Latte</h3>
+							<p>0 RON</p>            
+						</div>
+						<div class="item">
+							<h3 class="cursive-font primary-color">Americano</h3>
+							<p>0 RON</p>            
+						</div>
+						<div class="item">
+							<h3 class="cursive-font primary-color">Machiato Caramel</h3>
+							<p>0 RON</p>            
+						</div>
+					</div>
+					<div class="divider grey w-50 mx-auto"></div>
+					<div class="intro mt-4">
+						<h2 class="primary-color">Ceai & Ciocolata calda</h2>
+					</div>
+					<div class="margin_gap col_three rows">
+						<div class="item">
+							<h3 class="cursive-font primary-color">Ceai verde</h3>
+							<p>0 RON</p>            
+						</div>
+						<div class="item">
+							<h3 class="cursive-font primary-color">Ceai negru</h3>
+							<p>0 RON</p>            
+						</div>
+						<div class="item">
+							<h3 class="cursive-font primary-color">Ceai de menta</h3>
+							<p>0 RON</p>            
+						</div>
+						<div class="item">
+							<h3 class="cursive-font primary-color">Ceai de fructe de padure</h3>
+							<p>0 RON</p>            
+						</div>
+						<div class="item">
+							<h3 class="cursive-font primary-color">Chai</h3>
+							<p>Bauturea din ceai negru cu arome si condimente</p>            
+							<p>0 RON</p>            
+						</div>
+						<div class="item">
+							<h3 class="cursive-font primary-color">Ciocolata calda neagra</h3>
+							<p>0 RON</p>            
+						</div>
+					</div>
+				</div>
+
 			</div>
 
 			<div class="max_width">
@@ -303,7 +421,7 @@
 					<a target="_blank" href="https://www.instagram.com/" class="link">
 						<img src="../assets/media/instagram-icon.svg"
 							alt="instagram">
-						<span class="mr-1">@papanini</span>
+						<span class="mr-1">papanini</span>
 					</a>
 				</div>
 				<div class="divider grey"></div>
@@ -351,6 +469,8 @@
 			</div>
 
 			<script type='text/javascript' src='../assets/scripts/jquery-ui.js'></script>
+			<script type="text/javascript" src="../assets/data/meniu.json"></script>
+			<div id="fb-root"></div>
 		</div>
 	</div>
 </body>

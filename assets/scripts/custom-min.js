@@ -4053,6 +4053,9 @@ jQuery(document).ready(function(i) {
         i(".geo_error a").click(function() {
             i(".geo_error").removeClass("show")
         }),
+        i(document).on("click", ".fb-like.fb_iframe_widget", function(e) {
+            alert("yo")
+        }),
         // Select all links with hashes
         i(document).on("click", ".smoothscroll", function(e) {
             e.preventDefault(), i("html, body").animate({
