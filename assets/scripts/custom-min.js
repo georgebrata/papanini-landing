@@ -21,7 +21,7 @@ var geoClickedError = function(e) {
         console.log(e)
     },
     geoSuccess = function(e) {
-        $.cookie("fmanca_lat", e.coords.latitude), $.cookie("fmanca_lng", e.coords.longitude), getGeoFooter(e.coords.latitude, e.coords.longitude), getMyLocal(e.coords.latitude, e.coords.longitude), getGeoHomepagePromo(e.coords.latitude, e.coords.longitude)
+        $.cookie("papanini_lat", e.coords.latitude), $.cookie("papanini_lng", e.coords.longitude), getGeoFooter(e.coords.latitude, e.coords.longitude), getMyLocal(e.coords.latitude, e.coords.longitude), getGeoHomepagePromo(e.coords.latitude, e.coords.longitude)
     },
     objectFitImages = function() {
         "use strict";
@@ -1122,14 +1122,6 @@ jQuery(document).ready(function(e) {
     \__ \ | | (__|   < _ | \__ \
     |___/_|_|\___|_|\_(_)/ |___/
                        |__/
-
-     Version: 1.6.0
-      Author: Ken Wheeler
-     Website: http://kenwheeler.github.io
-        Docs: http://kenwheeler.github.io/slick
-        Repo: http://github.com/kenwheeler/slick
-      Issues: http://github.com/kenwheeler/slick/issues
-
      */
     /* global window, document, define, jQuery, setInterval, clearInterval */
     function(e) {
@@ -4087,7 +4079,7 @@ jQuery(document).ready(function(i) {
             }, 500)
         }),
         // Ask for location if cookie doesnt exist
-        // if ($.cookie('fmanca_lat') === undefined){
+        // if ($.cookie('papanini_lat') === undefined){
         // getLocation(),
         // }
         // Get location on click
@@ -4096,10 +4088,10 @@ jQuery(document).ready(function(i) {
         }),
         // Close cookie notification
         i(".cookie_notification a.close").click(function() {
-            i.cookie("fmanca_cookie_notification", !0), i(".cookie_notification").hide()
+            i.cookie("papanini_cookie_notification", !0), i(".cookie_notification").hide()
         }), i(document).mouseup(function(e) {
             var t = i(".cookie_notification");
-            t.is(e.target) || 0 !== t.has(e.target).length || (i.cookie("fmanca_cookie_notification", !0), i(".cookie_notification").hide())
+            t.is(e.target) || 0 !== t.has(e.target).length || (i.cookie("papanini_cookie_notification", !0), i(".cookie_notification").hide())
         }), i(".burger, .mobile_close").click(function(e) {
             100 < i(document).scrollTop() ? i(".menu-mobile-container").toggleClass("shrunk-margin") : i(".menu-mobile-container").toggleClass("full-margin"), i(".header_wrap header").toggleClass("menu_closed"), i("#mobile_menu").toggleClass("open"), i(".mobile_close").toggleClass("show"), i(".burger").toggleClass("hide"), i("body").toggleClass("lock")
         })
@@ -4141,9 +4133,9 @@ jQuery(document).ready(function(i) {
         }),
         // expand
         i(".geo_footer .find_us").click(function(e) {
-            e.preventDefault(), i(".geo_footer").addClass("expanded_one"), i(".geo_footer_overlay").addClass("show"), i(".header_wrap").addClass("behind"), void 0 === i.cookie("fmanca_lat") || (i(".geo_footer .closest").show(), i(".geo_footer .nearby").hide(), i(".geo_footer .search_locations").hide()), i(".geo_footer .search_locations_results").hide()
+            e.preventDefault(), i(".geo_footer").addClass("expanded_one"), i(".geo_footer_overlay").addClass("show"), i(".header_wrap").addClass("behind"), void 0 === i.cookie("papanini_lat") || (i(".geo_footer .closest").show(), i(".geo_footer .nearby").hide(), i(".geo_footer .search_locations").hide()), i(".geo_footer .search_locations_results").hide()
         }), i(".geo_footer").on("click", ".see_more", function(e) {
-            e.preventDefault(), i(".geo_footer").addClass("expanded_two"), void 0 !== i.cookie("fmanca_lat") && (i(".geo_footer .search_locations").show(), i(".geo_footer .closest").hide(), i(".geo_footer .nearby").show())
+            e.preventDefault(), i(".geo_footer").addClass("expanded_two"), void 0 !== i.cookie("papanini_lat") && (i(".geo_footer .search_locations").show(), i(".geo_footer .closest").hide(), i(".geo_footer .nearby").show())
         }), i(".geo_footer_overlay").click(function() {
             i(".header_wrap").removeClass("behind"), i(".geo_footer").removeClass("expanded_one expanded_two"), i(".geo_footer_overlay").removeClass("show")
         });

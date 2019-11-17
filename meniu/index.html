@@ -2,6 +2,15 @@
 <html lang="ro-RO">
 
 <head>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-152732839-1"></script>
+	<script>
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+
+	gtag('config', 'UA-152732839-1');
+	</script>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
 	<meta name="mobile-web-app-capable" content="yes">
@@ -46,10 +55,22 @@
 	<meta name="msapplication-TileColor" content="#ffffff">
 	<meta name="msapplication-config" content="../assets/browserconfig.xml">
 	<meta name="theme-color" content="#ffffff">
+
+	<!-- Begin Inspectlet Asynchronous Code -->
+	<script type="text/javascript">
+	(function() {
+	window.__insp = window.__insp || [];
+	__insp.push(['wid', 1950739304]);
+	var ldinsp = function(){
+	if(typeof window.__inspld != "undefined") return; window.__inspld = 1; var insp = document.createElement('script'); insp.type = 'text/javascript'; insp.async = true; insp.id = "inspsync"; insp.src = ('https:' == document.location.protocol ? 'https' : 'http') + '://cdn.inspectlet.com/inspectlet.js?wid=1950739304&r=' + Math.floor(new Date().getTime()/3600000); var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(insp, x); };
+	setTimeout(ldinsp, 0);
+	})();
+	</script>
+	<!-- End Inspectlet Asynchronous Code -->
 </head>
 
 <body data-rsssl=1 class="home page-template-menu page lock geo_disabled">
-<!--EXIT-INTENT MODAL-->
+<!--EXIT-INTENT MODAL
 	<div class="geo_error modal1"> 
 		<div class="notification mask2 pt-1 background-img">
 			<button type="button" class="close-btn">X</button>
@@ -58,7 +79,7 @@
 			<div class="fb-like" data-href="https://www.facebook.com/papanini.ro/" data-width="300" data-layout="button" data-action="like" data-size="large" data-show-faces="true" data-share="false"></div>
 			<div style="position: absolute; width: 60%; height: 35px; top: 450px; right: 20%;z-index: 9999;" class="like-overlay"></div>
 			<br>
-			<button type="button" id="surpriza-btn" class="fm_btn btn-disabled mt-4 ml-4">Vezi surpriza</button>
+			<button type="button" id="surpriza-btn" class="ppn_btn btn-disabled mt-4 ml-4">Vezi surpriza</button>
 			<br>
 			<div id="cod-reducere" class="hidden mt-4">
 				<h2 class="mb-2">Cod reducere 10% pentru orice comanda</h2>
@@ -69,6 +90,7 @@
 	<div id="fb-root"></div>
 	<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v4.0&appId=530456467699824&autoLogAppEvents=1"></script>
 	<script type='text/javascript' src='../assets/scripts/exit-intent.js'></script>
+-->
 
 	<div class="preloader">
 		<img src="../assets/media/papanini-loader.gif" alt="Papanini Loader GIF">
@@ -79,14 +101,14 @@
 		<nav id="mobile_menu">
 			<div class="menu-mobile-container">
 				<ul id="menu-mobile" class="menu">
-					<li class="menu-item menu-item-type-post_type menu-item-object-page">
-						<a href="../locatii">Locatii</a>
+					<li class="menu-item menu-item-type-post_type menu-item-object-page pb-1">
+						<a href="../meniu">Meniu</a>
 					</li>
+
 					<li class="menu-item menu-item-type-post_type menu-item-object-page">
-						<a href="./meniu">Meniu</a>
-					</li>
-					<li	class="menu-item menu-item-type-post_type menu-item-object-page">
-						<a href="../misiune">Misiunea noastra</a>
+						<div class="ctas primary-cta">
+							<a target="" class="ppn_btn pt-0" href="../comanda" style="color:white;">Comanda prin <img class="fp-logo" src="../assets/media/foodpanda-logo.png"></a>
+						</div>
 					</li>
 				</ul>
 			</div>
@@ -105,14 +127,16 @@
 				<div class="primary_menu">
 					<ul id="menu-header-left" class="">
 						<li id="menu-item-584" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-584">
-							<a href="../locatii">Locatii</a>
+							<div class="ctas primary-cta header-btn">
+								<a target="" class="ppn_btn pt-0 pb-3" href="../comanda" style="color:white;">Comanda prin <img class="fp-logo" style="transform: translateY(15px);" src="../assets/media/foodpanda-logo.png"></a>
+							</div>
 						</li>
 					</ul>
 				</div>
 				<a class="get_location" style="opacity: 0;pointer-events: none;">
 					<img src="../assets/styles/img/refresh-loc.svg" alt="location">
 				</a>
-				<a class="logo flex" href="../index.html">
+				<a class="logo flex" href="../">
 					<img src="../assets/media/logo-black-line-fit-papanini-cluj.png" alt="Papanini">
 				</a>
 				<div class="primary_menu">
@@ -144,18 +168,23 @@
 							<h2>Oricare ar fi intrebarea</h2>
 							<p class="sub_head">Raspunsul e Panini</p>
 							<p class="excerpt">
-								Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+								O fi paniniul doar un sandwich, dar atâta timp cât punem pasiune în fiecare ingredient, știm sigur că pauza pe care o faci la noi va deveni o răsplată binemeritată și un prilej să te întorci, să mai încerci, să mai descoperi.
 							</p>
 						</div>
 						<div class="ctas primary-cta">
-							<a target="" class="fm_btn" href="#LINK">vezi meniul nostru</a>
+							<a target="" class="ppn_btn" href="#menu_sticky">vezi meniul nostru</a>
 						</div>
 					</div>
 				</article>
 
 				<div class="divider grey"></div>
-
-                <div class="menu_sticky">
+<style>
+	.smoothscroll-menu:focus {
+		font-weight: 800;
+		color: var(--primary-color) !important;
+	}
+</style>
+                <div class="menu_sticky" id="menu_sticky">
                     <div class="anchor_nav">
                         <a class="smoothscroll-menu" href="#menublock_1">Panini</a>
                         <a class="smoothscroll-menu" href="#menublock_2">Salate</a>
@@ -170,62 +199,62 @@
                 <div class="section menu_block" id="menublock_1">
                     <div class="intro">
                         <h2 class="primary-color">Panini</h2>
-                        <p>Stim ce iti place.</p>
-                        <p>Stim ce este sanatos pentru tine.</p>
+                        <p>Știm ce îți place.</p>
+                        <p>Știm ce este sănătos pentru tine.</p>
                     </div>
                     <div class="margin_gap col_three rows">
                         <div class="item">
 							<h3 class="cursive-font primary-color">Panino Skinny Mini</h3>
 							<p>mozzarella, ardei roșu copt, sos pesto</p>
-                            <p>0 RON</p>            
+                                        
 						</div>
 						
                         <div class="item">
 							<h3 class="cursive-font primary-color">Panino Avo Ceci</h3>
 							<p>năut tocat, pastă de măsline, ardei roșu copt, felii de avocado, rucola</p>
-                            <p>0 RON</p>            
+                                        
 						</div>
 
 						<div class="item">
 							<h3 class="cursive-font primary-color">Panino Funghi</h3>
 							<p><b>ciuperci marinate coapte</b>, sos de brânză, ceapă caramelizată</p>
-                            <p>0 RON</p>            
+                                        
 						</div>
 						<div class="item">
 							<h3 class="cursive-font primary-color">Panino Gyros</h3>
 							<p><b>pui</b> sau <b>halloumi</b> la grill, cartofi prăjiți, rosie, salată verde, sos Tzatziki</p>
-							<p>0 RON</p>            
+							            
 						</div>
 						<div class="item">
 							<h3 class="cursive-font primary-color">Panino Pui & Avocado</h3>
 							<p>Pui copt, coleslaw, avocado, sos dulce-iute, brânză Mozzarella</p>
-							<p>0 RON</p>            
+							            
 						</div>
 						<div class="item">
 							<h3 class="cursive-font primary-color">Panino Godfadda</h3>
 							<p><b>Pui copt și prosciutto crudo</b>, rosie, rucola, brânză mozzarella, sos pesto</p>
-							<p>0 RON</p>            
+							            
 						</div>
 						<div class="item">
 							<h3 class="cursive-font primary-color">Panino Mortadella</h3>
 							<p>Mortadella, cartofi prajiti, mozzarella, sos Papanini</p>
-							<p>0 RON</p>            
+							            
 						</div>
 						<div class="item">
 							<h3 class="cursive-font primary-color">Panino Pulled Porkie</h3>
 							<p><b>carne porc condimentata</b>, gătită 12 ore la foc mic, si coleslaw </p>
-							<p>0 RON</p>            
+							            
 						</div>
 						<div class="item">
 							<h3 class="cursive-font primary-color">Panino Burger</h3>
 							<p>2 burgeri, branză cheddar, ceapă caramelizată, salată verde, roșie și sos Papanini</p>
-							<p>0 RON</p>            
+							            
 						</div>
 						<div class="item">
 							<h3 class="cursive-font primary-color">Niuu Panino - <i class="cursive-font primary-color">pentru copii</i></h3>
 							<p>pâine toast, bucăți de pui copt, mozzarella, cartofi prăjiți</p>
 							<p>EXTRA: Suc de mere</p>
-							<p>0 RON</p>            
+							            
 						</div>
 
                     </div>
@@ -241,19 +270,19 @@
 						<div class="item">
 							<h3 class="cursive-font primary-color">Salata pui si avocado</h3>
 							<p>salată verde, bucati pui copt, avocado, roșie, castravete, porumb boabe, brânză feta, dressing-ul casei sau sos Tzatziki</p>
-							<p>0 RON</p>            
+							            
 						</div>
 
 						<div class="item">
 							<h3 class="cursive-font primary-color">Salata Panzanella cu naut</h3>
 							<p>salată verde, năut, roșie, castravete, mozzarella cilegine, crutoane, dressing-ul casei</p>
-							<p>0 RON</p>            
+							            
 						</div>
 
 						<div class="item">
 							<h3 class="cursive-font primary-color">Mini Salata</h3>
 							<p>salată verde, roșii, castraveți, porumb, ulei de măsline și oțet balsamic</p>
-							<p>0 RON</p>            
+							            
 						</div>
 		
 					</div>
@@ -269,12 +298,12 @@
 
 						<div class="item">
 							<h3 class="cursive-font primary-color">Cartofi prajiti</h3>
-							<p>0 RON</p>            
+							            
 						</div>
 
 						<div class="item">
 							<h3 class="cursive-font primary-color">Cartofi prajiti cu sos de branza</h3>
-							<p>0 RON</p>            
+							            
 						</div>
 		
 					</div>
@@ -290,13 +319,13 @@
 						<div class="item">
 							<h3 class="cursive-font primary-color">Focaccia cu rosii uscate si oregano</h3>
 							<p>2 bucăți</p>
-							<p>0 RON</p>            
+							            
 						</div>
 
 						<div class="item">
 							<h3 class="cursive-font primary-color">Focaccia cu salam Napoli</h3>
 							<p>2 bucăți</p>							
-							<p>0 RON</p>            
+							            
 						</div>
 		
 					</div>
@@ -311,17 +340,17 @@
 
 						<div class="item">
 							<h3 class="cursive-font primary-color">Cookie cu ciocolata</h3>
-							<p>0 RON</p>            
+							            
 						</div>
 
 						<div class="item">
 							<h3 class="cursive-font primary-color">Brownie</h3>
-							<p>0 RON</p>            
+							            
 						</div>
 
 						<div class="item">
 							<h3 class="cursive-font primary-color">Chec cu lămâie</h3>
-							<p>0 RON</p>            
+							            
 						</div>
 	
 					</div>
@@ -336,17 +365,17 @@
 						<div class="item">
 							<h3 class="cursive-font primary-color">Limonada clasica</h3>
 							<p>Preparata proaspat</p>							
-							<p>0 RON</p>            
+							            
 						</div>
 						<div class="item">
 							<h3 class="cursive-font primary-color">Limonada de zmeura</h3>
 							<p>Preparata proaspat</p>							
-							<p>0 RON</p>            
+							            
 						</div>
 						<div class="item">
 							<h3 class="cursive-font primary-color">Limonada de menta</h3>
 							<p>Preparata proaspat</p>							
-							<p>0 RON</p>            
+							            
 						</div>
 					</div>
 					<div class="divider grey w-50 mx-auto"></div>
@@ -356,23 +385,23 @@
 					<div class="margin_gap col_three rows">
 						<div class="item">
 							<h3 class="cursive-font primary-color">Espresso</h3>
-							<p>0 RON</p>            
+							            
 						</div>
 						<div class="item">
 							<h3 class="cursive-font primary-color">Cappuccino</h3>
-							<p>0 RON</p>            
+							            
 						</div>
 						<div class="item">
 							<h3 class="cursive-font primary-color">Latte</h3>
-							<p>0 RON</p>            
+							            
 						</div>
 						<div class="item">
 							<h3 class="cursive-font primary-color">Americano</h3>
-							<p>0 RON</p>            
+							            
 						</div>
 						<div class="item">
 							<h3 class="cursive-font primary-color">Machiato Caramel</h3>
-							<p>0 RON</p>            
+							            
 						</div>
 					</div>
 					<div class="divider grey w-50 mx-auto"></div>
@@ -382,28 +411,28 @@
 					<div class="margin_gap col_three rows">
 						<div class="item">
 							<h3 class="cursive-font primary-color">Ceai verde</h3>
-							<p>0 RON</p>            
+							            
 						</div>
 						<div class="item">
 							<h3 class="cursive-font primary-color">Ceai negru</h3>
-							<p>0 RON</p>            
+							            
 						</div>
 						<div class="item">
 							<h3 class="cursive-font primary-color">Ceai de menta</h3>
-							<p>0 RON</p>            
+							            
 						</div>
 						<div class="item">
 							<h3 class="cursive-font primary-color">Ceai de fructe de padure</h3>
-							<p>0 RON</p>            
+							            
 						</div>
 						<div class="item">
 							<h3 class="cursive-font primary-color">Chai</h3>
 							<p>Bauturea din ceai negru cu arome si condimente</p>            
-							<p>0 RON</p>            
+							            
 						</div>
 						<div class="item">
 							<h3 class="cursive-font primary-color">Ciocolata calda neagra</h3>
-							<p>0 RON</p>            
+							            
 						</div>
 					</div>
 				</div>
@@ -411,19 +440,6 @@
 			</div>
 
 			<div class="max_width">
-				<div class="divider grey"></div>
-				<div class="social_links">
-					<a target="_blank" href="https://facebook.com/" class="link">
-						<img src="../assets/media/facebook-icon.svg"
-							alt="facebook">
-						<span>/papanini</span>
-					</a>
-					<a target="_blank" href="https://www.instagram.com/" class="link">
-						<img src="../assets/media/instagram-icon.svg"
-							alt="instagram">
-						<span class="mr-1">papanini</span>
-					</a>
-				</div>
 				<div class="divider grey"></div>
 			</div>
 
@@ -446,15 +462,23 @@
 					</div>
 					<div class="list-wrap">
 						<div class="menu-footer-2-container">
-							<ul id="menu-footer-2" class="menu" style="text-align: right;">
-								<li id="menu-item-2869"	class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2869">
-									<a href="../meniu">Meniu</a>
-								</li>
-								<li id="menu-item-2870"	class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2870">
-									<a href="../locatii">Locatii</a>
-								</li>
-								<li id="menu-item-2871"	class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2871">
-									<a href="../misiune">Misiunea noastra</a>
+							<ul id="menu-footer-1" class="menu">
+								<li id="menu-item-2866"	class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2866">
+									<div class="social_links" style="padding: 3px 0px;">
+										<a target="_blank" href="https://facebook.com/papanini.ro" class="link">
+											<img src="../assets/media/facebook-icon.svg"
+												alt="facebook">
+											<span>&nbsp;/papanini.ro</span>
+										</a>
+									</div>								</li>
+								<li id="menu-item-2867"	class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2867">
+									<div class="social_links" style="padding: 3px 0px;">
+										<a target="_blank" href="https://www.instagram.com/papanini.ro" class="link">
+											<img src="../assets/media/instagram-icon.svg"
+												alt="instagram">
+											<span>&nbsp;/papanini.ro</span>
+										</a>
+									</div>
 								</li>
 							</ul>
 						</div>

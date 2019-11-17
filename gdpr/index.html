@@ -2,6 +2,15 @@
 <html lang="ro-RO">
 
 <head>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-152732839-1"></script>
+	<script>
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+
+	gtag('config', 'UA-152732839-1');
+	</script>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
 	<meta name="mobile-web-app-capable" content="yes">
@@ -46,10 +55,22 @@
 	<meta name="msapplication-TileColor" content="#ffffff">
 	<meta name="msapplication-config" content="../assets/browserconfig.xml">
 	<meta name="theme-color" content="#ffffff">
+
+	<!-- Begin Inspectlet Asynchronous Code -->
+	<script type="text/javascript">
+	(function() {
+	window.__insp = window.__insp || [];
+	__insp.push(['wid', 1950739304]);
+	var ldinsp = function(){
+	if(typeof window.__inspld != "undefined") return; window.__inspld = 1; var insp = document.createElement('script'); insp.type = 'text/javascript'; insp.async = true; insp.id = "inspsync"; insp.src = ('https:' == document.location.protocol ? 'https' : 'http') + '://cdn.inspectlet.com/inspectlet.js?wid=1950739304&r=' + Math.floor(new Date().getTime()/3600000); var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(insp, x); };
+	setTimeout(ldinsp, 0);
+	})();
+	</script>
+	<!-- End Inspectlet Asynchronous Code -->
 </head>
 
 <body data-rsssl=1 class="home page-template-menu page lock geo_disabled">
-<!--EXIT-INTENT MODAL-->
+<!--EXIT-INTENT MODAL
 	<div class="geo_error modal1"> 
 		<div class="notification mask2 pt-1 background-img">
 			<button type="button" class="close-btn">X</button>
@@ -58,7 +79,7 @@
 			<div class="fb-like" data-href="https://www.facebook.com/papanini.ro/" data-width="300" data-layout="button" data-action="like" data-size="large" data-show-faces="true" data-share="false"></div>
 			<div style="position: absolute; width: 60%; height: 35px; top: 450px; right: 20%;z-index: 9999;" class="like-overlay"></div>
 			<br>
-			<button type="button" id="surpriza-btn" class="fm_btn btn-disabled mt-4 ml-4">Vezi surpriza</button>
+			<button type="button" id="surpriza-btn" class="ppn_btn btn-disabled mt-4 ml-4">Vezi surpriza</button>
 			<br>
 			<div id="cod-reducere" class="hidden mt-4">
 				<h2 class="mb-2">Cod reducere 10% pentru orice comanda</h2>
@@ -69,24 +90,23 @@
 	<div id="fb-root"></div>
 	<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v4.0&appId=530456467699824&autoLogAppEvents=1"></script>
 	<script type='text/javascript' src='../assets/scripts/exit-intent.js'></script>
-	
+-->
 	<div class="preloader">
 		<img src="../assets/media/papanini-loader.gif" alt="Papanini Loader GIF">
 	</div>
 
 	<div class="all_wrapper">
-
 		<nav id="mobile_menu">
 			<div class="menu-mobile-container">
 				<ul id="menu-mobile" class="menu">
-					<li class="menu-item menu-item-type-post_type menu-item-object-page">
-						<a href="../locatii">Locatii</a>
+					<li class="menu-item menu-item-type-post_type menu-item-object-page pb-1">
+						<a href="../meniu">Meniu</a>
 					</li>
+
 					<li class="menu-item menu-item-type-post_type menu-item-object-page">
-						<a href="./meniu">Meniu</a>
-					</li>
-					<li	class="menu-item menu-item-type-post_type menu-item-object-page">
-						<a href="../misiune">Misiunea noastra</a>
+						<div class="ctas primary-cta">
+							<a target="" class="ppn_btn pt-0" href="../comanda" style="color:white;">Comanda prin <img class="fp-logo" src="../assets/media/foodpanda-logo.png"></a>
+						</div>
 					</li>
 				</ul>
 			</div>
@@ -105,14 +125,16 @@
 				<div class="primary_menu">
 					<ul id="menu-header-left" class="">
 						<li id="menu-item-584" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-584">
-							<a href="../locatii">Locatii</a>
+							<div class="ctas primary-cta header-btn">
+								<a target="" class="ppn_btn pt-0 pb-3" href="../comanda" style="color:white;">Comanda prin <img class="fp-logo" style="transform: translateY(15px);" src="../assets/media/foodpanda-logo.png"></a>
+							</div>
 						</li>
 					</ul>
 				</div>
 				<a class="get_location" style="opacity: 0;pointer-events: none;">
 					<img src="../assets/styles/img/refresh-loc.svg" alt="location">
 				</a>
-				<a class="logo flex" href="../index.html">
+				<a class="logo flex" href="../">
 					<img src="../assets/media/logo-black-line-fit-papanini-cluj.png"	alt="Papanini">
 				</a>
 				<div class="primary_menu">
@@ -141,12 +163,37 @@
 						<div class="text_wrapper ">
 							<h2>Politica GDPR</h2>
 							<p class="sub_head">Avem grija de datele tale si stomacul tau.</p>
+							<p class="excerpt"></p>
 							<p class="excerpt">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                            </p>
-                            <p class="excerpt">
-                                Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?							
-                            </p>
+								Conform cerințelor Legii nr. 677/2001 pentru protecția persoanelor cu privire la prelucrarea datelor cu caracter personal
+								și liberă circulație a acestor date, modificată și completată și ale Legii nr. 506/2004 privind prelucrarea datelor
+								cu caracter personal și protecția vieții private în sectorul comunicațiilor electronice, SC SHIBBUMI SRL are
+								obligația de a administra în condiții de siguranță și numai pentru scopurile specificate, datele personale furnizate
+								despre dumneavoastră, un membru al familiei dumneavoastră ori o altă persoană. Scopul colectării datelor personale
+								este acela de onorare a comenzilor (eliberarea facturii, certificatului de garanţie și de expediere a produselor),
+								marketing (newsletter online) și realizarea de statistici necesare dezvoltării serviciilor oferite.
+								Informațiile colectate de către SC SHIBBUMI SRL având ca scop onorarea comenzilor, pot fi furnizate parțial companiilor
+								de curierat pentru expedierea și livrarea coletelor. Informațiile colectate de către SC SHIBBUMI SRL având ca
+								scop marketing-ul (newsletter online) nu vor fi furnizate/vândute sau închiriate unor terțe părti.
+							</p>
+							<p class="excerpt">
+								SC SHIBBUMI SRL colectează de la clienții săi date cu caracter personal precum nume, prenume, e-mail, număr de telefon și eventual adresă. numai dacă acestea sunt furnizate în mod voluntar de către client. Refuzul furnizării a acestor
+								date, duce la imposibilitatea procesării și finalizarii comenzilor transmise de către SC SHIBBUMI SRL. Datele
+								de identificare personale nu sunt furnizate către terțe persoane, companii ori alți colaboratori. Conform Legii
+								nr. 677/2001, clientul are dreptul de acces, intervenție asupra datelor, dreptul de a nu fi supus unei decizii
+								individuale și dreptul de a se adresa justiției. Totodată, aveți dreptul să vă opuneți prelucrării datelor personale
+								care vă privesc și să solicitați ștergerea acestora. Pentru exercitarea acestor drepturi, puteți formula o cerere
+								scrisă, datată și semnată la sediul firmei noastre, bld. Eroilor, 42 Cluj-Napoca, România, sau prin
+								e-mail la adresa servus@papanini.ro. S.C. SHIBBUMI S.R.L. și <a href="https://papanini.ro">papanini.ro</a> nu încurajează SPAM-ul, nu furnizează
+								datele dvs de contact unor terți (persoane fizice sau juridice), nu vinde, nu oferă, nu face schimb de adrese
+								de e-mail obținute prin intermediul acestui site, nu divulgă adresa dumneavoastră de e-mail altor persoane care
+								accesează paginile acestui site, fără acordul dumneavoastră explicit. Orice utilizator care a furnizat explicit
+								pe site-ul <a href="https://papanini.ro">papanini.ro</a> adresa sa de email poate opta ca aceasta să fie ștearsă din baza de date.
+								Pentru a șterge informațiile furnizate de dvs pentru newsletter-ul online, este de ajuns să vă dezabonați <a href="https://papanini.ro/dezabonare-newsletter">aici</a>.
+							</p>
+							<a href="https://facebook.com/papanini.ro"> 
+								<i>Panini cu ingrediente <b>neplictisitoare</b></i>
+							</a>
 						</div>
 					</div>
 				</article>
@@ -155,19 +202,6 @@
 			</div>
 
 			<div class="max_width">
-				<div class="divider grey"></div>
-				<div class="social_links">
-					<a target="_blank" href="https://facebook.com/" class="link">
-						<img src="../assets/media/facebook-icon.svg"
-							alt="facebook">
-						<span>/papanini</span>
-					</a>
-					<a target="_blank" href="https://www.instagram.com/" class="link">
-						<img src="../assets/media/instagram-icon.svg"
-							alt="instagram">
-						<span class="mr-1">papanini</span>
-					</a>
-				</div>
 				<div class="divider grey"></div>
 			</div>
 
@@ -190,15 +224,23 @@
 					</div>
 					<div class="list-wrap">
 						<div class="menu-footer-2-container">
-							<ul id="menu-footer-2" class="menu" style="text-align: right;">
-								<li id="menu-item-2869"	class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2869">
-									<a href="../meniu">Meniu</a>
-								</li>
-								<li id="menu-item-2870"	class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2870">
-									<a href="../locatii">Locatii</a>
-								</li>
-								<li id="menu-item-2871"	class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2871">
-									<a href="../misiune">Misiunea noastra</a>
+							<ul id="menu-footer-1" class="menu">
+								<li id="menu-item-2866"	class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2866">
+									<div class="social_links" style="padding: 3px 0px;">
+										<a target="_blank" href="https://facebook.com/papanini.ro" class="link">
+											<img src="../assets/media/facebook-icon.svg"
+												alt="facebook">
+											<span>&nbsp;/papanini.ro</span>
+										</a>
+									</div>								</li>
+								<li id="menu-item-2867"	class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2867">
+									<div class="social_links" style="padding: 3px 0px;">
+										<a target="_blank" href="https://www.instagram.com/papanini.ro" class="link">
+											<img src="../assets/media/instagram-icon.svg"
+												alt="instagram">
+											<span>&nbsp;/papanini.ro</span>
+										</a>
+									</div>
 								</li>
 							</ul>
 						</div>

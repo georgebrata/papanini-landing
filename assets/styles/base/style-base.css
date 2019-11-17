@@ -1726,7 +1726,7 @@ font-style:normal
 	display:none;
 	margin:30px 0
 }
-.enquire_form form input.fm_btn {
+.enquire_form form input.ppn_btn {
 	display:block;
 	max-width:200px;
 	margin:0 auto;
@@ -2552,7 +2552,7 @@ font-style:normal
 	display:none;
 	margin:30px 0
 }
-.masterclass form input.fm_btn {
+.masterclass form input.ppn_btn {
 	display:block;
 	max-width:200px;
 	margin:0 auto;
@@ -2928,7 +2928,7 @@ font-style:normal
 	}
 }
 @media only screen and (max-width: 650px) {
-	.search_form .fm_btn {
+	.search_form .ppn_btn {
 		margin-bottom:20px
 	}
 }
@@ -8395,7 +8395,7 @@ section.flexible-content.post-feed .inner article.one-fourth {
 	-ms-flex-align:center;
 	align-items:center;
 	font-size:20px;
-	margin:20px 0;
+	margin:0;
 	text-transform:uppercase;
 	color:#000
 }
@@ -8410,14 +8410,14 @@ section.flexible-content.post-feed .inner article.one-fourth {
 	}
 }
 .social_links a img {
-	width:30px;
-	height:30px;
+	width:20px;
+	height:20px;
 	margin:0 10px 0 0
 }
 @media only screen and (max-width: 1000px) {
 	.social_links a img {
-		width:40px;
-		height:40px
+		width:20px;
+		height:20px
 	}
 }
 .footer-wrapper {
@@ -8939,7 +8939,7 @@ body {
 	overflow:hidden;
 	border-radius:34px 30px 30px 50px
 }
-.fm_btn {
+.ppn_btn {
 	cursor:pointer;
 	-webkit-clip-path:polygon(0 93%,
 	0 1%,
@@ -8971,7 +8971,7 @@ body {
 	border-radius:0 8px 0 0;
 	display:inline-block
 }
-.fm_btn.full {
+.ppn_btn.full {
 	-webkit-box-flex:1;
 	-webkit-flex:1 0 90%;
 	-ms-flex:1 0 90%;
@@ -10305,12 +10305,12 @@ input {
 	margin:0 0 40px 0;
 	line-height:25px
 }
-.page-template-my-local .local .my_local .fm_btn,
-.restaurants-template-default .local .my_local .fm_btn {
+.page-template-my-local .local .my_local .ppn_btn,
+.restaurants-template-default .local .my_local .ppn_btn {
 	margin:8px
 }
-.page-template-my-local .local .my_local .fm_btn:last-child,
-.restaurants-template-default .local .my_local .fm_btn:last-child {
+.page-template-my-local .local .my_local .ppn_btn:last-child,
+.restaurants-template-default .local .my_local .ppn_btn:last-child {
 	margin:8px 8px 0 8px
 }
 @media only screen and (max-width: 650px) {
@@ -10804,11 +10804,6 @@ input {
 	z-index:2;
 	bottom:-5px
 }
-@media only screen and (max-width: 650px) {
-	.page-template-menu .menu_sticky {
-		position:static
-	}
-}
 .page-template-menu .allergens_panel {
 	display:none;
 	width:100%;
@@ -11232,7 +11227,7 @@ input {
 .page-template-event .venue .inner .hire-infos {
 	margin-top:20px
 }
-.page-template-event .venue .inner .fm_btn {
+.page-template-event .venue .inner .ppn_btn {
 	max-width:150px;
 	margin:0 auto
 }
@@ -11263,7 +11258,7 @@ input {
 .page-template-landing .simple-text p {
 	margin-bottom:0
 }
-.page-template-landing .simple-text .fm_btn {
+.page-template-landing .simple-text .ppn_btn {
 	display:block;
 	max-width:150px;
 	text-align:center;

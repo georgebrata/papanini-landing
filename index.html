@@ -2,6 +2,15 @@
 <html lang="ro-RO">
 
 <head>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-152732839-1"></script>
+	<script>
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+
+	gtag('config', 'UA-152732839-1');
+	</script>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
 	<meta name="mobile-web-app-capable" content="yes">
@@ -47,11 +56,23 @@
 	<meta name="msapplication-TileColor" content="#ffffff">
 	<meta name="msapplication-config" content="assets/browserconfig.xml">
 	<meta name="theme-color" content="#ffffff">
+
+	<!-- Begin Inspectlet Asynchronous Code -->
+	<script type="text/javascript">
+	(function() {
+	window.__insp = window.__insp || [];
+	__insp.push(['wid', 1950739304]);
+	var ldinsp = function(){
+	if(typeof window.__inspld != "undefined") return; window.__inspld = 1; var insp = document.createElement('script'); insp.type = 'text/javascript'; insp.async = true; insp.id = "inspsync"; insp.src = ('https:' == document.location.protocol ? 'https' : 'http') + '://cdn.inspectlet.com/inspectlet.js?wid=1950739304&r=' + Math.floor(new Date().getTime()/3600000); var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(insp, x); };
+	setTimeout(ldinsp, 0);
+	})();
+	</script>
+	<!-- End Inspectlet Asynchronous Code -->
 </head>
 
 <body data-rsssl=1 class="home page-template-default page lock geo_disabled">
 	<!--EXIT-INTENT MODAL-->
-	<!--adauga clasa .show sa apara-->
+	<!--adauga clasa .show sa apara
 	<div class="geo_error modal1"> 
 		<div class="notification mask2 pt-1 background-img">
 			<button type="button" class="close-btn">X</button>
@@ -60,7 +81,7 @@
 			<div class="fb-like" data-href="https://www.facebook.com/papanini.ro/" data-width="300" data-layout="button" data-action="like" data-size="large" data-show-faces="true" data-share="false"></div>
 			<div style="position: absolute; width: 60%; height: 35px; top: 450px; right: 20%;z-index: 9999;" class="like-overlay"></div>
 			<br>
-			<button type="button" id="surpriza-btn" class="fm_btn btn-disabled mt-4 ml-4">Vezi surpriza</button>
+			<button type="button" id="surpriza-btn" class="ppn_btn btn-disabled mt-4 ml-4">Vezi surpriza</button>
 			<br>
 			<div id="cod-reducere" class="hidden mt-4">
 				<h2 class="mb-2">Cod reducere 10% pentru orice comanda</h2>
@@ -70,7 +91,7 @@
 	</div>
 	<div id="fb-root"></div>
 	<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v4.0&appId=530456467699824&autoLogAppEvents=1"></script>
-	<script type='text/javascript' src='./assets/scripts/exit-intent.js'></script>
+	<script type='text/javascript' src='./assets/scripts/exit-intent.js'></script>-->
 
 	<div class="preloader">
 		<img src="./assets/media/papanini-loader.gif" alt="Papanini Loader GIF">
@@ -86,14 +107,14 @@
 		<nav id="mobile_menu">
 			<div class="menu-mobile-container">
 				<ul id="menu-mobile" class="menu">
-					<li class="menu-item menu-item-type-post_type menu-item-object-page">
-						<a href="./locatii">Locatii</a>
+					<li class="menu-item menu-item-type-post_type menu-item-object-page pb-1">
+						<a href="../meniu">Meniu</a>
 					</li>
+
 					<li class="menu-item menu-item-type-post_type menu-item-object-page">
-						<a href="./meniu">Meniu</a>
-					</li>
-					<li	class="menu-item menu-item-type-post_type menu-item-object-page">
-						<a href="./misiune">Misiunea noastra</a>
+						<div class="ctas primary-cta">
+							<a target="" class="ppn_btn pt-0" href="./comanda" style="color:white;">Comanda prin <img class="fp-logo" src="../assets/media/foodpanda-logo.png"></a>
+						</div>
 					</li>
 				</ul>
 			</div>
@@ -112,14 +133,16 @@
 				<div class="primary_menu">
 					<ul id="menu-header-left" class="">
 						<li id="menu-item-584" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-584">
-							<a href="./locatii">Locatii</a>
+							<div class="ctas primary-cta header-btn">
+								<a target="" class="ppn_btn pt-0 pb-3" href="../comanda" style="color:white;">Comanda prin <img class="fp-logo" style="transform: translateY(15px);" src="../assets/media/foodpanda-logo.png"></a>
+							</div>
 						</li>
 					</ul>
 				</div>
 				<a class="get_location" style="opacity: 0;pointer-events: none;">
 					<img src="./assets/styles/img/refresh-loc.svg" alt="location">
 				</a>
-				<a class="logo flex" href="index.html">
+				<a class="logo flex" href=".">
 					<img src="./assets/media/logo-black-line-fit-papanini-cluj.png"	alt="Papanini">
 				</a>
 				<div class="primary_menu">
@@ -131,7 +154,7 @@
 						</li>
 					</ul>
 				</div>
-				<a href="index.html#mobile_menu" class="burger">
+				<a href="javascript:void(0)" class="burger">
 					<img src="./assets/media/menu-icon.svg"
 						alt="mobile-menu">
 				</a>
@@ -152,11 +175,11 @@
 							<h2>Papanini</h2>
 							<p class="sub_head">Modul corect de a face panini</p>
 							<p class="excerpt">
-								Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris. 
+								Suntem un mic restaurant quick service unde găsești panini proaspăt, crocant, cu ingrediente neplictisitoare, bites și deserturi. În fiecare dimineață facem aluatul și coacem pâine proaspătă, facem sosuri și ne gândim ce combinații de ingrediente ar mai merge.
 							</p>
 						</div>
 						<div class="ctas primary-cta">
-							<a target="" class="fm_btn" href="./meniu/">vezi meniul nostru</a>
+							<a target="" class="ppn_btn" href="./meniu/">vezi meniul nostru</a>
 						</div>
 					</div>
 				</article>
@@ -169,84 +192,40 @@
 					</div>
 					<div class="teaser_text">
 						<div class="text_wrapper pushdown"><!--clasa pushdown face spatiere verticala-->
-							<h2>Despre noi</h2>
-							<p class="sub_head">A fost odata ca niciodata</p>
+							<h2>Ingrediente<p class="sub_head">de calitate</p></h2>
 							<p class="excerpt">
-								Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+								Aducem mozzarella, ulei de măsline, mortadella, prosciutto, pesto și roșii uscate din Italia, iar legumele și ce ne mai face cu ochiul ne străduim să le cumpărăm de la producătorii locali.
 							</p>
 						</div>
 						<div class="ctas">
-							<a target="" class="fm_btn" href="./misiune">
-								cine suntem
+							<a target="" class="ppn_btn" href="./comanda">
+								Comanda acum
 							</a>
 						</div>
 					</div>
 				</article>					
 
 				<div class="divider grey"></div>
-				
-				<article class="image_left grey mask2 promo col_two margin_gap section">
-					<div class="img_wrap ">
-						<img class="featured_image mask4" src="./assets/media/panini-hq-1.jpg" />
-					</div>
-					<div class="teaser_text">
-						<div class="text_wrapper pushdown">
-							<h2>Sectiune cu fundal</h2>
-							<p class="sub_head">si poza la stanga</p>
-							<p class="excerpt">
-								Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-							</p>
-						</div>
-						<div class="ctas">
-							<a target="_blank" class="fm_btn" href="#LINK">
-								Mi-i foame
-							</a>
-						</div>
-					</div>
-				</article>
-
-				<div class="divider grey"></div>
-
-				<article class="image_right grey mask4 promo col_two margin_gap section">
-					<div class="img_wrap ">
-						<img class="featured_image mask3" src="./assets/media/panini-hq-2.jpg" />
-					</div>
-					<div class="teaser_text">
-						<div class="text_wrapper pushdown">
-							<h2>Sectiune cu fundal</h2>
-							<p class="sub_head">Si poza la dreapta</p>
-							<p class="excerpt">
-								Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-							</p>
-						</div>
-						<div class="ctas">
-							<a target="" class="fm_btn" href="#LINK">Un buton</a>
-							<a target="" class="fm_btn" href="#LINK">Alt buton</a>
-						</div>
-					</div>
-				</article>
-
-				<div class="divider grey"></div>
 
 				<div class="insta_geo col_one section margin_gap">
 					<div class="geo_homepage_promo">
-						<h2>Sectiune mare (o singura coloana)</h2>
+						<h2>Gustul la care te întorci</h2>
 							<img class="mask3 w-50 mx-auto"	src="./assets/media/panini-clap.gif" />
 							<p>
-								Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ad minim veniam adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ad minim veniam adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ad minim veniam. 
+								O fi paniniul doar un sandwich, dar atâta timp cât <b>punem pasiune în fiecare ingredient</b>, știm sigur că pauza pe care o faci la noi va deveni o răsplată binemeritată și un prilej să te întorci, să mai încerci, să mai descoperi.
 							</p>						
 					</div>
 				</div>
 
 				<div class="divider grey"></div>
-
+<!--
 				<div class="newsletter row section">
 					<div class="col-4">
 						<img class="anim-el" src="./assets/media/panini-wink.gif" alt="newsletter" /> </div>
 					<div class="col-8">
 						<form>
-							<h2>Aboneaza-te la gustul suprem</h2>
-							<p>Promotii saptamanale pe email. Promitem sa-ti umplem doar stomacul, nu si inbox-ul.</p>
+							<h2>Abonează-te la gustul suprem</h2>
+							<p>Promoții săptămânale pe email. Promitem să-ți umplem doar stomacul, nu și inbox-ul.</p>
 							<div class="row">
 								<div class="col-6 input-wrap">
 									<input required class="first_name" type="text" name="f_name"
@@ -274,7 +253,7 @@
 									<input required type="checkbox" />
 									<label>Sunt de acord cu politica <a href="./gdpr">GDPR</a> a Papanini.</label>
 								</div>
-								<input class="fm_btn" type="submit" value="Aboneaza-te" />
+								<input class="ppn_btn" type="submit" value="Aboneaza-te" />
 							</div>
 							<div class="error"></div>
 						</form>
@@ -286,21 +265,8 @@
 
 			<div class="max_width">
 				<div class="divider grey"></div>
-				<div class="social_links">
-					<a target="_blank" href="https://facebook.com/" class="link">
-						<img src="./assets/media/facebook-icon.svg"
-							alt="facebook">
-						<span>/papanini</span>
-					</a>
-					<a target="_blank" href="https://www.instagram.com/" class="link">
-						<img src="./assets/media/instagram-icon.svg"
-							alt="instagram">
-						<span class="mr-1">papanini</span>
-					</a>
-				</div>
-				<div class="divider grey"></div>
 			</div>
-
+-->
 			<div class="footer-wrapper">
 				<footer class="site-footer max_width">
 					<div class="list-wrap">
@@ -320,18 +286,23 @@
 					</div>
 					<div class="list-wrap">
 						<div class="menu-footer-2-container">
-							<ul id="menu-footer-2" class="menu" style="text-align: right;">
-								<li id="menu-item-2869"	class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2869">
-									<a href="./meniu">Meniu</a>
-								</li>
-								<li id="menu-item-2870"	class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2870">
-									<a href="./locatii">Locatii</a>
-								</li>
-								<li id="menu-item-2871"	class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2871">
-									<a href="./misiune">Misiunea noastra</a>
-								</li>
-								<li id="menu-item-2871"	class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2871">
-									<a href="./cariera">Cariere</a>
+							<ul id="menu-footer-1" class="menu">
+								<li id="menu-item-2866"	class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2866">
+									<div class="social_links" style="padding: 3px 0px;">
+										<a target="_blank" href="https://facebook.com/papanini.ro" class="link">
+											<img src="../assets/media/facebook-icon.svg"
+												alt="facebook">
+											<span>&nbsp;/papanini.ro</span>
+										</a>
+									</div>								</li>
+								<li id="menu-item-2867"	class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2867">
+									<div class="social_links" style="padding: 3px 0px;">
+										<a target="_blank" href="https://www.instagram.com/papanini.ro" class="link">
+											<img src="../assets/media/instagram-icon.svg"
+												alt="instagram">
+											<span>&nbsp;/papanini.ro</span>
+										</a>
+									</div>
 								</li>
 							</ul>
 						</div>
