@@ -131,11 +131,11 @@
 				</ul>
 			</div>
 			<div class="social_links">
-				<a target="_blank" href="https://facebook.com/" class="link">
+				<a target="_blank" href="https://facebook.com/papanini.ro" class="link">
 					<img src="./assets/media/facebook-icon.svg"	alt="Papanini Cluj Facebook">
 				</a>
-				<a target="_blank" href="https://www.instagram.com/" class="link">
-					<img src="./assets/media/instagram-icon.svg" alt="instagram">
+				<a target="_blank" href="https://www.instagram.com/papanini.ro" class="link">
+					<img src="./assets/media/instagram-icon.svg" alt="Papanini Cluj Instagram">
 				</a>
 			</div>
 		</nav>
@@ -180,13 +180,12 @@
 
 				<article class="image_left promo col_two margin_gap section">
 					<div class="img_wrap heroscale">
-						<img class="featured_image mask2" src="./assets/media/papanini-original-2.jpg" style="max-height: 600px;"/>
+						<img class="featured_image mask2" src="./assets/media/papanini-original-3.jpg" style="max-height: 600px;"/>
 					</div>
 					<div class="teaser_text">
 						<div class="text_wrapper ">
-							<h2>Papanini</h2>
-							<p class="sub_head">Modul corect de a face panini</p>
-							<p class="excerpt">
+							<h2 class="mb-4">Papanini</h2>
+							<p class="excerpt mb-4">
 								Suntem un mic restaurant quick service unde găsești panini proaspăt, crocant, cu ingrediente neplictisitoare, bites și deserturi. În fiecare dimineață facem aluatul și coacem pâine proaspătă, facem sosuri și ne gândim ce combinații de ingrediente ar mai merge.
 							</p>
 						</div>
@@ -218,16 +217,26 @@
 				</article>					
 
 				<div class="divider grey"></div>
-<!--
+
 				<div class="insta_geo col_one section margin_gap">
 					<div class="geo_homepage_promo">
-						<h2>Gustul la care te întorci</h2>
-							<img class="mask3 w-50 mx-auto"	src="./assets/media/panini-clap.gif" />
-							<p>
-								O fi paniniul doar un sandwich, dar atâta timp cât <b>punem pasiune în fiecare ingredient</b>, știm sigur că pauza pe care o faci la noi va deveni o răsplată binemeritată și un prilej să te întorci, să mai încerci, să mai descoperi.
-							</p>						
+						<div style="display: flex; justify-content: space-between;">
+							<h2 style="display: inline;">Te asteptăm pe Eroiloor, 42 📍</h2>
+							
+							<div class="ctas primary-cta d-none d-lg-block" style="display: inline;">
+								<a target="_blank" class="ppn_btn" href="https://goo.gl/maps/PyxTX6rNr5Etwihc7">➚ Obtine Directii</a>
+							</div>
+						</div>
+						<div id="map" style="height: 90vw; max-height: 600px;"></div>
 					</div>
 				</div>
+				<div class="ctas primary-cta d-none d-md-block d-sm-block d-xs-block d-lg-none" style="display: inline;">
+					<a target="_blank" class="ppn_btn w-100 text-center mb-4" href="https://goo.gl/maps/PyxTX6rNr5Etwihc7">➚ Obtine Directii</a>
+				</div>
+
+				<div class="divider grey mt-4"></div>
+
+				<!--
 
 				<div class="divider grey"></div>
 
@@ -331,5 +340,10 @@
 			<script type='text/javascript' src='./assets/scripts/jquery-ui.js'></script>
 		</div>
 	</div>
+
+	<!--JAVASCRIPTS-->
+	<script src="./assets/js/jquery.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD79vjlDi3tAMMKGwk-ATpPwBlN9uMQG0c"></script>
+    <script src="./assets/js/main.js"></script>
 </body>
 </html>
