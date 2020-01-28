@@ -9585,7 +9585,8 @@ input {
 	margin:0
 }
 #mobile_menu .menu-mobile-container ul li {
-	margin:0;
+	margin:0 auto;
+	max-width: 90%;
 	list-style:none
 }
 

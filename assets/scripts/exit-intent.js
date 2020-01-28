@@ -1,4 +1,27 @@
 document.addEventListener('DOMContentLoaded', function(e) {
+    if ( location.hash === "#comanda" ) {
+        window.location.hash = '';
+    }
+    
+    function locationHashChanged( e ) {
+        console.log( location.hash );
+        console.log( e.oldURL, e.newURL );
+        if ( location.hash === "#comanda" ) {
+            document.querySelector(".modal1").classList.add('show');
+        } else {
+            document.querySelector(".modal1").classList.remove('show');
+        }
+    }
+    
+    window.onhashchange = locationHashChanged;
+
+    document.querySelector('.close-btn').onclick = function(e) {
+        sessionStorage.setItem('like-modal-show', 'true');
+        window.location.hash = '';
+        document.querySelector(".modal1").classList.remove('show');
+    }
+/*
+
     document.querySelector('.like-overlay').onclick = function(e) {
         document.querySelector('.like-overlay').style.display = 'none';
 
@@ -19,10 +42,7 @@ document.addEventListener('DOMContentLoaded', function(e) {
         }
 
     }
-    document.querySelector('.close-btn').onclick = function(e) {
-        sessionStorage.setItem('like-modal-show', 'true');
-        document.querySelector(".modal1").classList.remove('show');
-    }
+    
 
 
     document.onmouseleave = leaveFromTop;
@@ -34,4 +54,5 @@ document.addEventListener('DOMContentLoaded', function(e) {
             }
         }
     }
+*/
 }, false);
