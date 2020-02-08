@@ -26,11 +26,15 @@
     display: inline;
     transform: translateY(10px);
 }
+.eucemananc-logo {
+    width: 45px;
+    display: inline;
+    transform: translateY(13px);
+}
 .modal1 .ppn_btn {
     padding-bottom: 15px;
 }
-#menu-mobile .ppn_btn img {
-}
+
 @media only screen and (max-width: 400px) {
     .fp-logo {
         width: 80px;
