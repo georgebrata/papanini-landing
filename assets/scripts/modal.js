@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', function(e) {
     if ( location.hash === "#comanda" ) {
-        window.location.hash = '';
+        document.querySelector(".modal1").classList.add('show');
     }
     
     function locationHashChanged( e ) {
